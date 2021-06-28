@@ -1,0 +1,27 @@
+minimum_cumulusci_version: '3.38.0'
+project:
+    name: NPSP-PostInstallSteps
+    package:
+        name: NPSP-PostInstallSteps
+        api_version: '50.0'
+    dependencies:
+        - github: 'https://github.com/SalesforceFoundation/NPSP'
+    git:
+        default_branch: 'main'
+    source_format: sfdx
+
+tasks:
+    robot:
+        options:
+            suites: robot/NPSP-PostInstallSteps/tests
+            options:
+                outputdir: robot/NPSP-PostInstallSteps/results
+
+    robot_testdoc:
+        options:
+            path: robot/NPSP-PostInstallSteps/tests
+            output: robot/NPSP-PostInstallSteps/doc/NPSP-PostInstallSteps_tests.html
+
+    run_tests:
+        options:
+            required_org_code_coverage_percent: 75
