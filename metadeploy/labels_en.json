@@ -1,0 +1,70 @@
+{
+    "product": {
+        "title": {
+            "message": "NPSP Post Installation Configuration",
+            "description": "name of product"
+        },
+        "short_description": {
+            "message": "NPSP Post Installation configuration steps",
+            "description": "tagline of product"
+        }
+    },
+    "plan:install": {
+        "title": {
+            "message": "Install NPSP Post Install Template",
+            "description": "title of installation plan"
+        }
+    },
+    "checks": {
+        "Nonprofit Success Pack will be installed into the Salesforce Org.": {
+            "message": "Nonprofit Success Pack will be installed into the Salesforce Org.",
+            "description": "shown if validation fails"
+        },
+        "Please enable My Domain in your org prior to installing.": {
+            "message": "Please enable My Domain in your org prior to installing.",
+            "description": "shown if validation fails"
+        }
+    },
+    "steps": {
+        "Install {product} {version}": {
+            "message": "Install {product} {version}",
+            "description": "title of installation step"
+        },
+        "Deploy https://github.com/SalesforceFoundation/NPSP/unpackaged/pre/account_record_types": {
+            "message": "Deploy https://github.com/SalesforceFoundation/NPSP/unpackaged/pre/account_record_types",
+            "description": "title of installation step"
+        },
+        "Deploy https://github.com/SalesforceFoundation/NPSP/unpackaged/pre/opportunity_record_types": {
+            "message": "Deploy https://github.com/SalesforceFoundation/NPSP/unpackaged/pre/opportunity_record_types",
+            "description": "title of installation step"
+        },
+        "Deploy https://github.com/SalesforceFoundation/NPSP/unpackaged/post/first": {
+            "message": "Deploy https://github.com/SalesforceFoundation/NPSP/unpackaged/post/first",
+            "description": "title of installation step"
+        },
+        "dx_convert_from": {
+            "message": "dx_convert_from",
+            "description": "title of installation step"
+        },
+        "unschedule_apex": {
+            "message": "unschedule_apex",
+            "description": "title of installation step"
+        },
+        "update_package_xml": {
+            "message": "update_package_xml",
+            "description": "title of installation step"
+        },
+        "deploy": {
+            "message": "deploy",
+            "description": "title of installation step"
+        },
+        "uninstall_packaged_incremental": {
+            "message": "uninstall_packaged_incremental",
+            "description": "title of installation step"
+        },
+        "Update Admin Profile": {
+            "message": "Update Admin Profile",
+            "description": "title of installation step"
+        }
+    }
+}
