@@ -34,6 +34,9 @@ flows:
                 task: update_dependencies
             2:
                 task: deploy_pre
+                ui_options:
+                    recordtypes:
+                        name: Opportunity and Account Record Types
             3:
                 task: dx_convert_from
                 when: project_config.project__source_format == "sfdx" and not org_config.scratch
@@ -61,14 +64,18 @@ plans:
     description: NPSP Post Installation steps template
     is_listed: True
     checks:
+      - when: "not tasks.check_my_domain_active()"
+        action: error
+        message: "Please enable My Domain in your org prior to installing."    
       - when: "'npsp' not in tasks.get_installed_packages()"
         action: warn
         message: "Nonprofit Success Pack will be installed into the Salesforce Org."
-      - when: "not tasks.check_my_domain_active()"
-        action: error
-        message: "Please enable My Domain in your org prior to installing."
     steps:
         1:
-            flow: install_template
-            ui_options:
-                name: Install NPSP Post Installation steps template
+            task: update_dependencies
+        2:
+            task: deploy_pre
+        3:
+            task: install_managed
+        4:
+            task: deploy_post
