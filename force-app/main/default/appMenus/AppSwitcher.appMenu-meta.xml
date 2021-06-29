@@ -96,4 +96,8 @@
         <name>Nonprofit_Success_Pack</name>
         <type>CustomApplication</type>
     </appMenuItems>
+    <appMenuItems>
+        <name>NPSP_Admin</name>
+        <type>CustomApplication</type>
+    </appMenuItems>
 </AppMenu>
