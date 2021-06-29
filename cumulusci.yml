@@ -25,3 +25,49 @@ tasks:
     run_tests:
         options:
             required_org_code_coverage_percent: 75
+
+flows:
+    install_template:
+        steps:
+            1:
+                task: update_dependencies
+            2:
+                task: deploy_pre
+            3:
+                task: dx_convert_from
+                when: project_config.project__source_format == "sfdx" and not org_config.scratch
+            4:
+                task: unschedule_apex
+            5:
+                task: update_package_xml
+                when: project_config.project__source_format != "sfdx" or not org_config.scratch
+            6:
+                task: deploy
+                when: project_config.project__source_format != "sfdx" or not org_config.scratch
+            7:
+                task: uninstall_packaged_incremental
+                when: project_config.project__source_format != "sfdx" or not org_config.scratch
+            8:
+                task: deploy_post
+            9:
+                task: update_admin_profile
+
+plans:
+  install:
+    slug: install
+    title: Install NPSP Post Install Template
+    tier: primary
+    description: NPSP Post Installation steps template
+    is_listed: True
+    checks:
+      - when: "'npsp' not in tasks.get_installed_packages()"
+        action: warn
+        message: "Nonprofit Success Pack will be installed into the Salesforce Org."
+      - when: "not tasks.check_my_domain_active()"
+        action: error
+        message: "Please enable My Domain in your org prior to installing."
+    steps:
+        1:
+            flow: install_template
+            ui_options:
+                name: Install NPSP Post Installation steps template
