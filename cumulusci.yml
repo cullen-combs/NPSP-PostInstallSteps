@@ -68,34 +68,30 @@ plans:
       - when: "'npsp' not in tasks.get_installed_packages()"
         action: warn
         message: "Nonprofit Success Pack will be installed into the Salesforce Org."
-        steps:
-            1:
-                task: unschedule_apex
-                ui_options:
-                    name: Unschedule Scheduled Apex Jobs
-                    is_required: False
-                    is_recommended: True
-            2:
-                task: update_dependencies
-                ui_options:
-                    name: Install/Update Nonprofit Success Pack
-            3:
-                task: dx_convert_from
-                ui_options:
-                    name: Convert Unmanaged Source
-            4:
-                task: deploy
-                ui_options:
-                    name: Deploy Extra Configuration (Picklist, Page Layouts, etc)
-                    is_required: False
-                    is_recommended: False
-            5:
-                task: update_admin_profile
-                ui_options:
-                    name: Update Profile  
-            6:
-                task: load_dataset
-                ui_options:
-                    name: Load Reciprocal Relationship Data
-                    is_required: True
-                    is_recommended: True   
+    steps:
+        1:
+            task: unschedule_apex
+            ui_options:
+                name: Unschedule Scheduled Apex Jobs
+                is_required: False
+                is_recommended: True
+        2:
+            task: update_dependencies
+            ui_options:
+                name: Install/Update Nonprofit Success Pack
+        3:
+            task: dx_convert_from
+            ui_options:
+                name: Convert Unmanaged Source
+        4:
+            task: deploy
+            ui_options:
+                name: Deploy Extra Configuration (Picklist, Page Layouts, etc)
+        5:
+            task: update_admin_profile
+            ui_options:
+                name: Update Profile  
+        6:
+            task: load_dataset
+            ui_options:
+                name: Load Reciprocal Relationship Data
