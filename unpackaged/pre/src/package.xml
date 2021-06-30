@@ -238,11 +238,6 @@
     <members>Contact.NewDonation</members>
   </types>
   <types>
-    <name>ReportType</name>
-    <members>npo02__Households_and_Donations</members>
-    <members>npsp__Contacts_Only</members>
-  </types>
-  <types>
     <name>StandardValueSet</name>
     <members>ContactRole</members>
     <members>OpportunityStage</members>
