@@ -47,6 +47,12 @@ plans:
                 is_required: False
                 is_recommended: True
         2:
+            task: deploy_pre
+            options:
+                path: unpackaged/pre/record_types
+            ui_options:
+                name: Account and Opportunity Record Types, Stages, and Sales Processes
+        2:
             task: dx_convert_from
             ui_options:
                 name: Convert Unmanaged Source
