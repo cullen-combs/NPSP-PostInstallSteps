@@ -49,22 +49,28 @@ plans:
         2:
             task: deploy
             ui_options:
-                name: Opportunity Record Types, Stages, and Sales Processes
+                name: Contact and Opportunity Picklists
+            options:
+                path: unpackaged/pre/picklists
+        3:
+            task: deploy
+            ui_options:
+                name: Opportunity Record Types, Business Processes and List Views
             options:
                 path: unpackaged/pre/record_types
-        3:
+        4:
             task: dx_convert_from
             ui_options:
                 name: Convert Unmanaged Source
-        4:
+        5:
             task: deploy
             ui_options:
                 name: Deploy Extra Configuration (Picklist, Page Layouts, etc)
-        5:
+        6:
             task: update_admin_profile
             ui_options:
                 name: Update Profile  
-        6:
+        7:
             task: load_dataset
             ui_options:
                 name: Load Reciprocal Relationship Data
