@@ -97,6 +97,10 @@
         "Deploy unpackaged/pre/record_types/objects": {
             "message": "Deploy unpackaged/pre/record_types/objects",
             "description": "title of installation step"
+        },
+        "Opportunity Record Types, Stages, and Sales Processes": {
+            "message": "Opportunity Record Types, Stages, and Sales Processes",
+            "description": "title of installation step"
         }
     }
 }

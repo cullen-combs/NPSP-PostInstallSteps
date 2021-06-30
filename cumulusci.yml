@@ -47,7 +47,7 @@ plans:
                 is_required: False
                 is_recommended: True
         2:
-            task: deploy_pre
+            task: deploy
             ui_options:
                 name: Opportunity Record Types, Stages, and Sales Processes
             options:
