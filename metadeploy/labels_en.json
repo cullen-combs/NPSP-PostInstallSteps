@@ -109,6 +109,18 @@
         "Opportunity Record Types, Business Processes and List Views": {
             "message": "Opportunity Record Types, Business Processes and List Views",
             "description": "title of installation step"
+        },
+        "Opportunity Record Types, Business Processes": {
+            "message": "Opportunity Record Types, Business Processes",
+            "description": "title of installation step"
+        },
+        "Account and Contact Page Layouts": {
+            "message": "Account and Contact Page Layouts",
+            "description": "title of installation step"
+        },
+        "Additional Post Installation Configuration": {
+            "message": "Additional Post Installation Configuration",
+            "description": "title of installation step"
         }
     }
 }

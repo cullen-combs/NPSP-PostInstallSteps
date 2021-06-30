@@ -57,22 +57,8 @@ plans:
             ui_options:
                 name: Opportunity Record Types, Business Processes
             options:
-                path: unpackaged/pre/record_types
+                path: unpackaged/pre/record_types          
         4:
-            task: deploy
-            ui_options:
-                name: Account and Contact Page Layouts
-            options:
-                path: unpackaged/pre/layouts
-        5:
-            task: deploy
-            ui_options:
-                name: Account and Opportunity List Views
-                is_required: False
-                is_recommended: True
-            options:
-                path: unpackaged/pre/listviews               
-        5:
             task: deploy
             ui_options:
                 name: Additional Post Installation Configuration
@@ -80,11 +66,25 @@ plans:
                 is_recommended: True
             options:
                 path: unpackaged/pre/src 
+        5:
+            task: deploy
+            ui_options:
+                name: Account and Contact Page Layouts
+            options:
+                path: unpackaged/pre/layouts
         6:
+            task: deploy
+            ui_options:
+                name: Account and Opportunity List Views
+                is_required: False
+                is_recommended: True
+            options:
+                path: unpackaged/pre/listviews   
+        7:
             task: update_admin_profile
             ui_options:
                 name: Update Profile  
-        7:
+        8:
             task: load_dataset
             ui_options:
                 name: Load Reciprocal Relationship Data
