@@ -4,8 +4,6 @@ project:
     package:
         name: NPSP-PostInstallSteps
         api_version: '50.0'
-    dependencies:
-        - github: 'https://github.com/SalesforceFoundation/NPSP'
     git:
         default_branch: 'main'
         repo_url: https://github.com/SFDO-Alliances/NPSP-PostInstallSteps
@@ -27,34 +25,7 @@ tasks:
         options:
             required_org_code_coverage_percent: 75
 
-
-flows:
-    install_template:
-        steps:
-            1:
-                task: update_dependencies
-            2:
-                task: deploy_pre
-                ui_options:
-                    recordtypes:
-                        name: Opportunity and Account Record Types
-            3:
-                task: dx_convert_from
-                when: project_config.project__source_format == "sfdx" and not org_config.scratch
-            4:
-                task: unschedule_apex
-            5:
-                task: update_package_xml
-                when: project_config.project__source_format != "sfdx" or not org_config.scratch
-            6:
-                task: deploy
-                when: project_config.project__source_format != "sfdx" or not org_config.scratch
-            7:
-                task: deploy_post
-            8:
-                task: update_admin_profile
-
-plans:
+fplans:
   install:
     slug: install
     title: Install NPSP Post Install Template
@@ -66,8 +37,8 @@ plans:
         action: error
         message: "Please enable My Domain in your org prior to installing."    
       - when: "'npsp' not in tasks.get_installed_packages()"
-        action: warn
-        message: "Nonprofit Success Pack will be installed into the Salesforce Org."
+        action: error
+        message: "Nonprofit Success Pack must be installed prior to installing this template."
     steps:
         1:
             task: unschedule_apex
@@ -76,22 +47,18 @@ plans:
                 is_required: False
                 is_recommended: True
         2:
-            task: update_dependencies
-            ui_options:
-                name: Install/Update Nonprofit Success Pack
-        3:
             task: dx_convert_from
             ui_options:
                 name: Convert Unmanaged Source
-        4:
+        3:
             task: deploy
             ui_options:
                 name: Deploy Extra Configuration (Picklist, Page Layouts, etc)
-        5:
+        4:
             task: update_admin_profile
             ui_options:
                 name: Update Profile  
-        6:
+        5:
             task: load_dataset
             ui_options:
                 name: Load Reciprocal Relationship Data

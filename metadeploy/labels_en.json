@@ -1,7 +1,7 @@
 {
     "product": {
         "title": {
-            "message": "NPSP Post Installation Configuration",
+            "message": "NPSP - Post Installation Configuration",
             "description": "name of product"
         },
         "short_description": {
@@ -64,6 +64,26 @@
         },
         "Update Admin Profile": {
             "message": "Update Admin Profile",
+            "description": "title of installation step"
+        },
+        "Unschedule Scheduled Apex Jobs": {
+            "message": "Unschedule Scheduled Apex Jobs",
+            "description": "title of installation step"
+        },
+        "Convert Unmanaged Source": {
+            "message": "Convert Unmanaged Source",
+            "description": "title of installation step"
+        },
+        "Deploy Extra Configuration (Picklist, Page Layouts, etc)": {
+            "message": "Deploy Extra Configuration (Picklist, Page Layouts, etc)",
+            "description": "title of installation step"
+        },
+        "Update Profile": {
+            "message": "Update Profile",
+            "description": "title of installation step"
+        },
+        "Load Reciprocal Relationship Data": {
+            "message": "Load Reciprocal Relationship Data",
             "description": "title of installation step"
         }
     }
