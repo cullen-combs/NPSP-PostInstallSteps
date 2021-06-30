@@ -48,10 +48,10 @@ plans:
                 is_recommended: True
         2:
             task: deploy_pre
+            ui_options:
+                name: Opportunity Record Types, Stages, and Sales Processes
             options:
                 path: unpackaged/pre/record_types
-            ui_options:
-                name: Account and Opportunity Record Types, Stages, and Sales Processes
         3:
             task: dx_convert_from
             ui_options:

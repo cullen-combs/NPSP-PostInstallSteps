@@ -93,6 +93,10 @@
         "Load Reciprocal Relationship Data": {
             "message": "Load Reciprocal Relationship Data",
             "description": "title of installation step"
+        },
+        "Deploy unpackaged/pre/record_types/objects": {
+            "message": "Deploy unpackaged/pre/record_types/objects",
+            "description": "title of installation step"
         }
     }
 }
