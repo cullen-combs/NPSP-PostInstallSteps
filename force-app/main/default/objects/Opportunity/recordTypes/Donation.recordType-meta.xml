@@ -3,7 +3,7 @@
     <fullName>Donation</fullName>
     <active>true</active>
     <businessProcess>Donation</businessProcess>
-    <description>Donation being prospected or already received</description>
+    <description>Donation being prospected or already received.</description>
     <label>Donation</label>
     <picklistValues>
         <picklist>ForecastCategoryName</picklist>
