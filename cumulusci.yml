@@ -55,17 +55,31 @@ plans:
         3:
             task: deploy
             ui_options:
-                name: Opportunity Record Types, Business Processes and List Views
+                name: Opportunity Record Types, Business Processes
             options:
                 path: unpackaged/pre/record_types
         4:
-            task: dx_convert_from
+            task: deploy
             ui_options:
-                name: Convert Unmanaged Source
+                name: Account and Contact Page Layouts
+            options:
+                path: unpackaged/pre/layouts
         5:
             task: deploy
             ui_options:
-                name: Deploy Extra Configuration (Picklist, Page Layouts, etc)
+                name: Account and Opportunity List Views
+                is_required: False
+                is_recommended: True
+            options:
+                path: unpackaged/pre/listviews               
+        5:
+            task: deploy
+            ui_options:
+                name: Additional Post Installation Configuration
+                is_required: True
+                is_recommended: True
+            options:
+                path: unpackaged/pre/src 
         6:
             task: update_admin_profile
             ui_options:

@@ -101,6 +101,14 @@
         "Opportunity Record Types, Stages, and Sales Processes": {
             "message": "Opportunity Record Types, Stages, and Sales Processes",
             "description": "title of installation step"
+        },
+        "Contact and Opportunity Picklists": {
+            "message": "Contact and Opportunity Picklists",
+            "description": "title of installation step"
+        },
+        "Opportunity Record Types, Business Processes and List Views": {
+            "message": "Opportunity Record Types, Business Processes and List Views",
+            "description": "title of installation step"
         }
     }
 }
