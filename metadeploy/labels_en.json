@@ -121,6 +121,10 @@
         "Additional Post Installation Configuration": {
             "message": "Additional Post Installation Configuration",
             "description": "title of installation step"
+        },
+        "Account and Opportunity List Views": {
+            "message": "Account and Opportunity List Views",
+            "description": "title of installation step"
         }
     }
 }
