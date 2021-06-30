@@ -5,7 +5,7 @@
             "description": "name of product"
         },
         "short_description": {
-            "message": "NPSP Post Installation Configuration - details: http://sfdc.co/bx6gce",
+            "message": "NPSP Post Installation Configuration - details here: http://sfdc.co/bx6gce",
             "description": "tagline of product"
         }
     },
@@ -26,6 +26,10 @@
         },
         "Nonprofit Success Pack must be installed prior to installing this template.": {
             "message": "Nonprofit Success Pack must be installed prior to installing this template.",
+            "description": "shown if validation fails"
+        },
+        "NPSP Post Installation requires the Nonprofit Success Pack. Please install the Nonprofit Success Pack and try again.": {
+            "message": "NPSP Post Installation requires the Nonprofit Success Pack. Please install the Nonprofit Success Pack and try again.",
             "description": "shown if validation fails"
         }
     },
