@@ -5,7 +5,7 @@
             "description": "name of product"
         },
         "short_description": {
-            "message": "NPSP Post Installation configuration steps",
+            "message": "NPSP Post Installation Configuration (https://sfdc.co/bx6gce)",
             "description": "tagline of product"
         }
     },
@@ -22,6 +22,10 @@
         },
         "Please enable My Domain in your org prior to installing.": {
             "message": "Please enable My Domain in your org prior to installing.",
+            "description": "shown if validation fails"
+        },
+        "Nonprofit Success Pack must be installed prior to installing this template.": {
+            "message": "Nonprofit Success Pack must be installed prior to installing this template.",
             "description": "shown if validation fails"
         }
     },
