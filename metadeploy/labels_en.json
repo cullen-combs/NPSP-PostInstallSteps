@@ -1,11 +1,11 @@
 {
     "product": {
         "title": {
-            "message": "NPSP - Post Installation Configuration",
+            "message": "NPSP Post Installation Configuration",
             "description": "name of product"
         },
         "short_description": {
-            "message": "NPSP Post Installation Configuration (https://sfdc.co/bx6gce)",
+            "message": "NPSP Post Installation Configuration - details: http://sfdc.co/bx6gce",
             "description": "tagline of product"
         }
     },
