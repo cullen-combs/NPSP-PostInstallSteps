@@ -125,6 +125,30 @@
         "Account and Opportunity List Views": {
             "message": "Account and Opportunity List Views",
             "description": "title of installation step"
+        },
+        "Opportunity Stages": {
+            "message": "Opportunity Stages",
+            "description": "title of installation step"
+        },
+        "Opportunity Sales Processes and Record Types": {
+            "message": "Opportunity Sales Processes and Record Types",
+            "description": "title of installation step"
+        },
+        "Account, Contact (Gender) and Lead Objects configuration": {
+            "message": "Account, Contact (Gender) and Lead Objects configuration",
+            "description": "title of installation step"
+        },
+        "Contact Opportunity Contact Roles and Mx. Salutation": {
+            "message": "Contact Opportunity Contact Roles and Mx. Salutation",
+            "description": "title of installation step"
+        },
+        "Reciprocal Relationship Settings": {
+            "message": "Reciprocal Relationship Settings",
+            "description": "title of installation step"
+        },
+        "Manage Household Button": {
+            "message": "Manage Household Button",
+            "description": "title of installation step"
         }
     }
 }
