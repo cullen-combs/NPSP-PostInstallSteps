@@ -67,7 +67,7 @@ plans:
         5:
             task: deploy
             ui_options:
-                name: Contact Opportunity Contact Roles and Mx. Salutation
+                name: Opportunity Contact Roles and Contact Mx. Salutation
             options:
                 path: unpackaged/pre/picklists/contact
         6:
@@ -83,12 +83,24 @@ plans:
         8:
             task: deploy
             ui_options:
-                name: New NPSP Lightning App
+                name: Contact 'New Donation' Quick Action
+            options:
+                path: unpackaged/pre/quickaction
+        9:
+            task: deploy
+            ui_options:
+                name: New NPSP Lightning Apps
             options:
                 path: unpackaged/pre/application
-        8:
+        10:
             task: deploy
             ui_options:
                 name: Account and Opportunity List Views
             options:
                 path: unpackaged/pre/listviews
+        11:
+            task: deploy
+            ui_options:
+                name: NPSP System Administrator Profile
+            options:
+                path: unpackaged/pre/profile

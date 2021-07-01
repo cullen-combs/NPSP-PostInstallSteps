@@ -16,15 +16,7 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>Posted</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Prospecting</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Withdrawn</fullName>
+            <fullName>Declined</fullName>
             <default>false</default>
         </values>
     </businessProcesses>
