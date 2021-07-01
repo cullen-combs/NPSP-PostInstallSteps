@@ -65,7 +65,7 @@ plans:
                 is_required: True
                 is_recommended: True
             options:
-                path: unpackaged/pre/src 
+                path: unpackaged/src 
         5:
             task: deploy
             ui_options:
