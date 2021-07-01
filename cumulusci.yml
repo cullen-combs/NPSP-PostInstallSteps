@@ -49,42 +49,34 @@ plans:
         2:
             task: deploy
             ui_options:
-                name: Contact and Opportunity Picklists
+                name: Opportunity Stages
             options:
-                path: unpackaged/pre/picklists
+                path: unpackaged/pre/picklists/opportunity
         3:
             task: deploy
             ui_options:
-                name: Opportunity Record Types, Business Processes
+                name: Opportunity Sales Processes and Record Types
             options:
-                path: unpackaged/pre/record_types          
+                path: unpackaged/pre/record_types/opportunity
         4:
             task: deploy
             ui_options:
-                name: Additional Post Installation Configuration
-                is_required: True
-                is_recommended: True
+                name: Account, Contact (Gender) and Lead Objects configuration
             options:
-                path: unpackaged/src 
+                path: unpackaged/pre/objects
         5:
             task: deploy
             ui_options:
-                name: Account and Contact Page Layouts
+                name: Contact Opportunity Contact Roles
             options:
-                path: unpackaged/pre/layouts
+                path: unpackaged/pre/picklists/contact
         6:
-            task: deploy
-            ui_options:
-                name: Account and Opportunity List Views
-                is_required: False
-                is_recommended: True
-            options:
-                path: unpackaged/pre/listviews   
-        7:
-            task: update_admin_profile
-            ui_options:
-                name: Update Profile  
-        8:
             task: load_dataset
             ui_options:
-                name: Load Reciprocal Relationship Data
+                name: Reciprocal Relationship Settings
+        7:
+            task: deploy
+            ui_options:
+                name: Manage Household Button
+            options:
+                path: unpackaged/pre/layouts
