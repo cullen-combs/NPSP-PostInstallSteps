@@ -67,7 +67,7 @@ plans:
         5:
             task: deploy
             ui_options:
-                name: Contact Opportunity Contact Roles
+                name: Contact Opportunity Contact Roles and Mx. Salutation
             options:
                 path: unpackaged/pre/picklists/contact
         6:
@@ -80,3 +80,15 @@ plans:
                 name: Manage Household Button
             options:
                 path: unpackaged/pre/layouts
+        8:
+            task: deploy
+            ui_options:
+                name: New NPSP Lightning App
+            options:
+                path: unpackaged/pre/application
+        8:
+            task: deploy
+            ui_options:
+                name: Account and Opportunity List Views
+            options:
+                path: unpackaged/pre/listviews
