@@ -77,28 +77,36 @@ plans:
         7:
             task: deploy
             ui_options:
+                name: Activate Workflow Rules
+            options:
+                path: unpackaged/pre/workflows
+                is_required: False
+                is_recommended: True
+        8:
+            task: deploy
+            ui_options:
                 name: Manage Household Button
             options:
                 path: unpackaged/pre/layouts
-        8:
+        9:
             task: deploy
             ui_options:
                 name: Contact 'New Donation' Quick Action
             options:
                 path: unpackaged/pre/quickaction
-        9:
+        10:
             task: deploy
             ui_options:
                 name: New NPSP Lightning Apps
             options:
                 path: unpackaged/pre/application
-        10:
+        11:
             task: deploy
             ui_options:
                 name: Account and Opportunity List Views
             options:
                 path: unpackaged/pre/listviews
-        11:
+        12:
             task: deploy
             ui_options:
                 name: NPSP System Administrator Profile
