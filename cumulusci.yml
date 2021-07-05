@@ -78,10 +78,10 @@ plans:
             task: deploy
             ui_options:
                 name: Activate Workflow Rules
-            options:
-                path: unpackaged/pre/workflows
                 is_required: False
                 is_recommended: True
+            options:
+                path: unpackaged/pre/workflows
         8:
             task: deploy
             ui_options:

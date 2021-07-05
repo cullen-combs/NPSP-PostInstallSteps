@@ -149,6 +149,26 @@
         "Manage Household Button": {
             "message": "Manage Household Button",
             "description": "title of installation step"
+        },
+        "Opportunity Contact Roles and Contact Mx. Salutation": {
+            "message": "Opportunity Contact Roles and Contact Mx. Salutation",
+            "description": "title of installation step"
+        },
+        "Activate Workflow Rules": {
+            "message": "Activate Workflow Rules",
+            "description": "title of installation step"
+        },
+        "Contact 'New Donation' Quick Action": {
+            "message": "Contact 'New Donation' Quick Action",
+            "description": "title of installation step"
+        },
+        "New NPSP Lightning Apps": {
+            "message": "New NPSP Lightning Apps",
+            "description": "title of installation step"
+        },
+        "NPSP System Administrator Profile": {
+            "message": "NPSP System Administrator Profile",
+            "description": "title of installation step"
         }
     }
 }
