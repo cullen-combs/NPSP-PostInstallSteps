@@ -676,10 +676,6 @@
         <field>Lead.npsp__CompanyStreet__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    <layoutAssignments>
-        <layout>npsp__Opportunity-Donation Layout</layout>
-        <recordType>Opportunity.Donation</recordType>
-    </layoutAssignments>
     <objectPermissions>
         <allowCreate>true</allowCreate>
         <allowDelete>true</allowDelete>
