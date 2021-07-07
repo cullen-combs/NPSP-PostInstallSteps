@@ -108,7 +108,11 @@ plans:
                 name: NPSP System Administrator Profile
             options:
                 path: unpackaged/pre/profile
+                is_required: False
+                is_recommended: True
         12:
             task: load_dataset
             ui_options:
                 name: Reciprocal Relationship Settings
+                is_required: False
+                is_recommended: True
