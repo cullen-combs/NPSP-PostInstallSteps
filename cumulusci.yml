@@ -106,10 +106,10 @@ plans:
             task: deploy
             ui_options:
                 name: NPSP System Administrator Profile
-            options:
-                path: unpackaged/pre/profile
                 is_required: False
                 is_recommended: True
+            options:
+                path: unpackaged/pre/profile
         12:
             task: load_dataset
             ui_options:
