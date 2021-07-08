@@ -9,22 +9,6 @@ project:
         repo_url: https://github.com/SFDO-Alliances/NPSP-PostInstallSteps
     source_format: sfdx
 
-tasks:
-    robot:
-        options:
-            suites: robot/NPSP-PostInstallSteps/tests
-            options:
-                outputdir: robot/NPSP-PostInstallSteps/results
-
-    robot_testdoc:
-        options:
-            path: robot/NPSP-PostInstallSteps/tests
-            output: robot/NPSP-PostInstallSteps/doc/NPSP-PostInstallSteps_tests.html
-
-    run_tests:
-        options:
-            required_org_code_coverage_percent: 75
-
 plans:
   install:
     slug: install
@@ -43,88 +27,187 @@ plans:
         1:
             task: unschedule_apex
             ui_options:
-                name: Unschedule Scheduled Apex Jobs
                 is_required: False
                 is_recommended: True
         2:
-            task: deploy
-            ui_options:
-                name: Add Opportunity Stages
-            options:
-                path: unpackaged/pre/picklists/opportunity
+            task: npsp_opp_stages
         3:
-            task: deploy
-            ui_options:
-                name: Configure Opportunity Sales Processes and Record Types
-            options:
-                path: unpackaged/pre/record_types/opportunity
+            task: npsp_opp_proc_rec
         4:
-            task: deploy
-            ui_options:
-                name: Account, Contact (Gender) and Lead Objects configuration
-            options:
-                path: unpackaged/pre/objects
+            task: npsp_acc_con_lead
         5:
-            task: deploy
-            ui_options:
-                name: Add Opportunity Contact Roles and Contact Mx. Salutation
-            options:
-                path: unpackaged/pre/picklists/contact
+            task: npsp_opproles_mx
         6:
-            task: deploy
+            task: npsp_wf_rules
             ui_options:
-                name: Activate Workflow Rules
                 is_required: False
                 is_recommended: True
-            options:
-                path: unpackaged/pre/workflows
         7:
-            task: deploy
-            ui_options:
-                name: Configure Manage Household Button
-            options:
-                path: unpackaged/pre/layouts
+            task: npsp_hh_button
         8:
-            task: deploy
-            ui_options:
-                name: Configure Contact 'New Donation' Quick Action
-            options:
-                path: unpackaged/pre/quickaction
+            task: npsp_new_donation
         9:
-            task: deploy
-            ui_options:
-                name: Add NPSP Lightning and NPSP Admin Lightning Apps
-            options:
-                path: unpackaged/pre/application
+            task: npsp_new_lex_apps
         10:
-            task: deploy
-            ui_options:
-                name: Configure Account and Opportunity List Views
-            options:
-                path: unpackaged/pre/listviews
+            task: npsp_list_views
         11:
-            task: deploy
-            ui_options:
-                name: Add NPSP System Administrator Profile
-                is_required: False
-                is_recommended: True
-            options:
-                path: unpackaged/pre/profile
+            task: npsp_profile
         12:
-            task: load_dataset
+            task: npsp_load_csettings
             ui_options:
-                name: Load Reciprocal Relationship Settings
                 is_required: False
                 is_recommended: True
-            options:
-                mapping: datasets/customsettings.yml
-                sql_path: datasets/customsettings.sql
         13:
-            task: load_dataset
+            task: npsp_org_address_enabled
             ui_options:
-                name: Load Sample Dataset for Organizations, Households, and Donations
                 is_required: False
                 is_recommended: True
+        14:
+            task: npsp_load_sdata
+            ui_options:
+                is_required: False
+                is_recommended: True
+
+flows:
+    test_install:
+        description: NPSP Post Installation steps tasks
+        steps:
+          1:
+            task: npsp_opp_stages
+          2:
+            task: npsp_opp_proc_rec
+          3:
+            task: npsp_acc_con_lead
+          4:
+            task: npsp_opproles_mx
+          5:
+            task: npsp_wf_rules
+          6:
+            task: npsp_hh_button
+          7:
+            task: npsp_new_donation
+          8:
+            task: npsp_new_lex_apps
+          9:
+            task: npsp_list_views
+          10:
+            task: npsp_profile
+          11:
+            task: npsp_load_csettings
+          12:
+            task: npsp_org_address_enabled
+          13:
+            task: npsp_load_sdata
+
+tasks:
+    robot:
+        options:
+            suites: robot/NPSP-PostInstallSteps/tests
             options:
-                mapping: datasets/sampledata.yml
-                sql_path: datasets/sampledata.sql
+                outputdir: robot/NPSP-PostInstallSteps/results
+
+    robot_testdoc:
+        options:
+            path: robot/NPSP-PostInstallSteps/tests
+            output: robot/NPSP-PostInstallSteps/doc/NPSP-PostInstallSteps_tests.html
+
+    run_tests:
+        options:
+            required_org_code_coverage_percent: 75
+
+    npsp_opp_stages:
+        description: Add Opportunity Stages
+        class_path: cumulusci.tasks.salesforce.Deploy
+        options:
+            path: unpackaged/pre/picklists/opportunity
+
+    npsp_opp_proc_rec:
+        description: Configure Opportunity Sales Processes and Record Types
+        class_path: cumulusci.tasks.salesforce.Deploy
+        options:
+            path: unpackaged/pre/record_types/opportunity
+
+    npsp_acc_con_lead:
+        description: Account, Contact (Gender) and Lead Objects configuration
+        class_path: cumulusci.tasks.salesforce.Deploy
+        options:
+            path: unpackaged/pre/objects
+
+    npsp_opproles_mx:
+        description: Add Opportunity Contact Roles and Contact Mx. Salutation
+        class_path: cumulusci.tasks.salesforce.Deploy
+        options:
+            path: unpackaged/pre/picklists/contact
+
+    npsp_wf_rules:
+        description: Activate Workflow Rules
+        class_path: cumulusci.tasks.salesforce.Deploy
+        options:
+            path: unpackaged/pre/workflows
+
+    npsp_hh_button:
+        description: Configure Manage Household Button
+        class_path: cumulusci.tasks.salesforce.Deploy
+        options:
+            path: unpackaged/pre/layouts
+
+    npsp_new_donation:
+        description: Configure Contact 'New Donation' Quick Action
+        class_path: cumulusci.tasks.salesforce.Deploy
+        options:
+            path: unpackaged/pre/quickaction
+
+    npsp_new_lex_apps:
+        description: Add NPSP Lightning and NPSP Admin Lightning Apps
+        class_path: cumulusci.tasks.salesforce.Deploy
+        options:
+            path: unpackaged/pre/application
+
+    npsp_list_views:
+        description: Configure Account and Opportunity List Views
+        class_path: cumulusci.tasks.salesforce.Deploy
+        options:
+            path: unpackaged/pre/listviews
+
+    npsp_profile:
+        description: Update System Administrator Profile
+        class_path: cumulusci.tasks.salesforce.ProfileGrantAllAccess
+        options:
+            record_types:
+                - record_type: Account.HH_Account
+                - record_type: Account.Organization
+                  default: true
+                - record_type: Opportunity.NPSP_Default
+                - record_type: Opportunity.Membership
+                - record_type: Opportunity.Matching_Gift
+                - record_type: Opportunity.Major_Gift
+                - record_type: Opportunity.In_Kind_Gift
+                - record_type: Opportunity.Grant
+                - record_type: Opportunity.Donation
+                  default: true
+
+    npsp_load_csettings:
+        description: Load Reciprocal Relationship Settings
+        class_path: cumulusci.tasks.salesforce.LoadCustomSettings
+        options:
+            settings_path: datasets/relatinoships.yml
+
+    npsp_org_address_enabled:
+        description: Enables Address management for non-Household Accounts (Required if loading Sample Data)
+        class_path: cumulusci.tasks.salesforce.LoadCustomSettings
+        options:
+            settings_path: datasets/org_address_enabled.yml
+
+    npsp_load_sdata:
+        description: Load Sample Dataset for Organizations, Households, Donations, and Addresses
+        class_path: cumulusci.tasks.bulkdata.LoadData
+        options:
+            mapping: datasets/sampledata.yml
+            sql_path: datasets/sampledata.sql
+
+    npsp_delete_sdata:
+        description: Delete Sample Dataset for Organizations, Households, Donations, and Addresses
+        class_path: cumulusci.tasks.bulkdata.DeleteData
+        options:
+            objects: Opportunity, npe03__Recurring_Donation__c, Contact, npsp__Address__c, Account, npsp__Batch__c, npo02__Household__c, Campaign
+            ignore_row_errors: True
