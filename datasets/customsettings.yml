@@ -1,0 +1,8 @@
+Insert npe4__Relationship_Lookup__c:
+  sf_object: npe4__Relationship_Lookup__c
+  fields:
+  - Name
+  - npe4__Active__c
+  - npe4__Female__c
+  - npe4__Male__c
+  - npe4__Neutral__c

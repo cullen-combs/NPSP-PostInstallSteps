@@ -49,13 +49,13 @@ plans:
         2:
             task: deploy
             ui_options:
-                name: Opportunity Stages
+                name: Add Opportunity Stages
             options:
                 path: unpackaged/pre/picklists/opportunity
         3:
             task: deploy
             ui_options:
-                name: Opportunity Sales Processes and Record Types
+                name: Configure Opportunity Sales Processes and Record Types
             options:
                 path: unpackaged/pre/record_types/opportunity
         4:
@@ -67,7 +67,7 @@ plans:
         5:
             task: deploy
             ui_options:
-                name: Opportunity Contact Roles and Contact Mx. Salutation
+                name: Add Opportunity Contact Roles and Contact Mx. Salutation
             options:
                 path: unpackaged/pre/picklists/contact
         6:
@@ -81,31 +81,31 @@ plans:
         7:
             task: deploy
             ui_options:
-                name: Manage Household Button
+                name: Configure Manage Household Button
             options:
                 path: unpackaged/pre/layouts
         8:
             task: deploy
             ui_options:
-                name: Contact 'New Donation' Quick Action
+                name: Configure Contact 'New Donation' Quick Action
             options:
                 path: unpackaged/pre/quickaction
         9:
             task: deploy
             ui_options:
-                name: New NPSP Lightning Apps
+                name: Add NPSP Lightning and NPSP Admin Lightning Apps
             options:
                 path: unpackaged/pre/application
         10:
             task: deploy
             ui_options:
-                name: Account and Opportunity List Views
+                name: Configure Account and Opportunity List Views
             options:
                 path: unpackaged/pre/listviews
         11:
             task: deploy
             ui_options:
-                name: NPSP System Administrator Profile
+                name: Add NPSP System Administrator Profile
                 is_required: False
                 is_recommended: True
             options:
@@ -113,6 +113,18 @@ plans:
         12:
             task: load_dataset
             ui_options:
-                name: Reciprocal Relationship Settings
+                name: Load Reciprocal Relationship Settings
                 is_required: False
                 is_recommended: True
+            options:
+                mapping: datasets/customsettings.yml
+                sql_path: datasets/customsettings.sql
+        13:
+            task: load_dataset
+            ui_options:
+                name: Load Sample Dataset for Organizations, Households, and Donations
+                is_required: False
+                is_recommended: True
+            options:
+                mapping: datasets/sampledata.yml
+                sql_path: datasets/sampledata.sql
