@@ -169,6 +169,58 @@
         "NPSP System Administrator Profile": {
             "message": "NPSP System Administrator Profile",
             "description": "title of installation step"
+        },
+        "npsp_opp_stages": {
+            "message": "npsp_opp_stages",
+            "description": "title of installation step"
+        },
+        "npsp_opp_proc_rec": {
+            "message": "npsp_opp_proc_rec",
+            "description": "title of installation step"
+        },
+        "npsp_acc_con_lead": {
+            "message": "npsp_acc_con_lead",
+            "description": "title of installation step"
+        },
+        "npsp_opproles_mx": {
+            "message": "npsp_opproles_mx",
+            "description": "title of installation step"
+        },
+        "npsp_wf_rules": {
+            "message": "npsp_wf_rules",
+            "description": "title of installation step"
+        },
+        "npsp_hh_button": {
+            "message": "npsp_hh_button",
+            "description": "title of installation step"
+        },
+        "npsp_new_donation": {
+            "message": "npsp_new_donation",
+            "description": "title of installation step"
+        },
+        "npsp_new_lex_apps": {
+            "message": "npsp_new_lex_apps",
+            "description": "title of installation step"
+        },
+        "npsp_list_views": {
+            "message": "npsp_list_views",
+            "description": "title of installation step"
+        },
+        "npsp_profile": {
+            "message": "npsp_profile",
+            "description": "title of installation step"
+        },
+        "npsp_load_csettings": {
+            "message": "npsp_load_csettings",
+            "description": "title of installation step"
+        },
+        "npsp_org_address_enabled": {
+            "message": "npsp_org_address_enabled",
+            "description": "title of installation step"
+        },
+        "npsp_load_sdata": {
+            "message": "npsp_load_sdata",
+            "description": "title of installation step"
         }
     }
 }

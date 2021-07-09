@@ -26,45 +26,68 @@ plans:
     steps:
         1:
             task: unschedule_apex
+            name: Unschedule Scheduled Apex Jobs
             ui_options:
                 is_required: False
                 is_recommended: True
         2:
             task: npsp_opp_stages
+            ui_options:
+                name: Configure Opportunity Stages
         3:
             task: npsp_opp_proc_rec
+            ui_options:
+                name: Configure Opportunity Sales Processes and Record Types
         4:
             task: npsp_acc_con_lead
+            ui_options:
+                name: Account, Contact (Gender) and Lead Objects configuration
         5:
             task: npsp_opproles_mx
+            ui_options:
+                name: Add Opportunity Contact Roles and Contact Mx. Salutation
         6:
             task: npsp_wf_rules
             ui_options:
+                name: Activate Workflow Rules
                 is_required: False
                 is_recommended: True
         7:
             task: npsp_hh_button
+            ui_options:
+                name: Configure Manage Household Button
         8:
             task: npsp_new_donation
+            ui_options:
+                name: Configure Contact 'New Donation' Quick Action
         9:
             task: npsp_new_lex_apps
+            ui_options:
+                name: Add NPSP Lightning and NPSP Admin Lightning Apps
         10:
             task: npsp_list_views
+            ui_options:
+                name: Configure Account and Opportunity List Views
         11:
             task: npsp_profile
+            ui_options:
+                name: Update System Administrator Profile
         12:
             task: npsp_load_csettings
             ui_options:
+                name: Load Reciprocal Relationship Settings
                 is_required: False
                 is_recommended: True
         13:
             task: npsp_org_address_enabled
             ui_options:
+                name: Enable Address management for non-Household Accounts (Required if loading Sample Data)
                 is_required: False
                 is_recommended: True
         14:
             task: npsp_load_sdata
             ui_options:
+                name: Load Sample Dataset for Organizations, Households, Donations, and Addresses
                 is_required: False
                 is_recommended: True
 
@@ -193,7 +216,7 @@ tasks:
             settings_path: datasets/relatinoships.yml
 
     npsp_org_address_enabled:
-        description: Enables Address management for non-Household Accounts (Required if loading Sample Data)
+        description: Enable Address management for non-Household Accounts (Required if loading Sample Data)
         class_path: cumulusci.tasks.salesforce.LoadCustomSettings
         options:
             settings_path: datasets/org_address_enabled.yml
