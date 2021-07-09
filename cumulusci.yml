@@ -92,8 +92,8 @@ plans:
                 is_recommended: True
 
 flows:
-    test_install:
-        description: NPSP Post Installation steps tasks
+    complete_install:
+        description: NPSP Post Installation Configuration and Sample Data
         steps:
           1:
             task: npsp_opp_stages
@@ -121,6 +121,31 @@ flows:
             task: npsp_org_address_enabled
           13:
             task: npsp_load_sdata
+    config_only:
+        description: NPSP Post Installation Configuration Only
+        steps:
+          1:
+            task: npsp_opp_stages
+          2:
+            task: npsp_opp_proc_rec
+          3:
+            task: npsp_acc_con_lead
+          4:
+            task: npsp_opproles_mx
+          5:
+            task: npsp_wf_rules
+          6:
+            task: npsp_hh_button
+          7:
+            task: npsp_new_donation
+          8:
+            task: npsp_new_lex_apps
+          9:
+            task: npsp_list_views
+          10:
+            task: npsp_profile
+          11:
+            task: npsp_load_csettings
 
 tasks:
     robot:

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
-    <ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <listViews xmlns="http://soap.sforce.com/2006/04/metadata">
         <fullName>All_Accounts</fullName>
         <columns>ACCOUNT.NAME</columns>
         <columns>npo02__Formal_Greeting__c</columns>
@@ -11,7 +11,7 @@
         <columns>npo02__HouseholdPhone__c</columns>
         <filterScope>Everything</filterScope>
         <label>All Accounts</label>
-    </ListView>
+    </listViews>
     <listViews>
         <fullName>Organization_Accounts</fullName>
         <columns>ACCOUNT.NAME</columns>
@@ -28,7 +28,7 @@
         </filters>
         <label>Organization Accounts</label>
     </listViews>
-    <ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <listViews xmlns="http://soap.sforce.com/2006/04/metadata">
         <fullName>Household_Accounts</fullName>
         <columns>ACCOUNT.NAME</columns>
         <columns>npo02__Formal_Greeting__c</columns>
@@ -44,5 +44,5 @@
             <value>Account.HH_Account</value>
         </filters>
         <label>Household Accounts</label>
-    </ListView>
+    </listViews>
 </CustomObject>
