@@ -53,13 +53,13 @@ plans:
                 is_required: False
                 is_recommended: True
         7:
-            task: npsp_hh_button
-            ui_options:
-                name: Configure Manage Household Button
-        8:
             task: npsp_new_donation
             ui_options:
                 name: Configure Contact 'New Donation' Quick Action
+        8:
+            task: npsp_hh_button
+            ui_options:
+                name: Configure Manage Household Button
         9:
             task: npsp_new_lex_apps
             ui_options:
@@ -106,9 +106,9 @@ flows:
           5:
             task: npsp_wf_rules
           6:
-            task: npsp_hh_button
-          7:
             task: npsp_new_donation
+          7:
+            task: npsp_hh_button
           8:
             task: npsp_new_lex_apps
           9:
@@ -135,9 +135,9 @@ flows:
           5:
             task: npsp_wf_rules
           6:
-            task: npsp_hh_button
-          7:
             task: npsp_new_donation
+          7:
+            task: npsp_hh_button
           8:
             task: npsp_new_lex_apps
           9:
@@ -218,7 +218,7 @@ tasks:
             path: unpackaged/pre/listviews
 
     npsp_profile:
-        description: Update System Administrator Profile
+        description: Retrieve, update, and redeploy the Admin profile with FLS perms for objects and fields
         class_path: cumulusci.tasks.salesforce.ProfileGrantAllAccess
         options:
             record_types:
