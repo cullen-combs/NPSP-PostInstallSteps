@@ -16,16 +16,8 @@
         }
     },
     "checks": {
-        "Nonprofit Success Pack will be installed into the Salesforce Org.": {
-            "message": "Nonprofit Success Pack will be installed into the Salesforce Org.",
-            "description": "shown if validation fails"
-        },
         "Please enable My Domain in your org prior to installing.": {
             "message": "Please enable My Domain in your org prior to installing.",
-            "description": "shown if validation fails"
-        },
-        "Nonprofit Success Pack must be installed prior to installing this template.": {
-            "message": "Nonprofit Success Pack must be installed prior to installing this template.",
             "description": "shown if validation fails"
         },
         "NPSP Post Installation requires the Nonprofit Success Pack. Please install the Nonprofit Success Pack and try again.": {
@@ -34,192 +26,8 @@
         }
     },
     "steps": {
-        "Install {product} {version}": {
-            "message": "Install {product} {version}",
-            "description": "title of installation step"
-        },
-        "Deploy https://github.com/SalesforceFoundation/NPSP/unpackaged/pre/account_record_types": {
-            "message": "Deploy https://github.com/SalesforceFoundation/NPSP/unpackaged/pre/account_record_types",
-            "description": "title of installation step"
-        },
-        "Deploy https://github.com/SalesforceFoundation/NPSP/unpackaged/pre/opportunity_record_types": {
-            "message": "Deploy https://github.com/SalesforceFoundation/NPSP/unpackaged/pre/opportunity_record_types",
-            "description": "title of installation step"
-        },
-        "Deploy https://github.com/SalesforceFoundation/NPSP/unpackaged/post/first": {
-            "message": "Deploy https://github.com/SalesforceFoundation/NPSP/unpackaged/post/first",
-            "description": "title of installation step"
-        },
-        "dx_convert_from": {
-            "message": "dx_convert_from",
-            "description": "title of installation step"
-        },
-        "unschedule_apex": {
-            "message": "unschedule_apex",
-            "description": "title of installation step"
-        },
-        "update_package_xml": {
-            "message": "update_package_xml",
-            "description": "title of installation step"
-        },
-        "deploy": {
-            "message": "deploy",
-            "description": "title of installation step"
-        },
-        "uninstall_packaged_incremental": {
-            "message": "uninstall_packaged_incremental",
-            "description": "title of installation step"
-        },
-        "Update Admin Profile": {
-            "message": "Update Admin Profile",
-            "description": "title of installation step"
-        },
         "Unschedule Scheduled Apex Jobs": {
             "message": "Unschedule Scheduled Apex Jobs",
-            "description": "title of installation step"
-        },
-        "Convert Unmanaged Source": {
-            "message": "Convert Unmanaged Source",
-            "description": "title of installation step"
-        },
-        "Deploy Extra Configuration (Picklist, Page Layouts, etc)": {
-            "message": "Deploy Extra Configuration (Picklist, Page Layouts, etc)",
-            "description": "title of installation step"
-        },
-        "Update Profile": {
-            "message": "Update Profile",
-            "description": "title of installation step"
-        },
-        "Load Reciprocal Relationship Data": {
-            "message": "Load Reciprocal Relationship Data",
-            "description": "title of installation step"
-        },
-        "Deploy unpackaged/pre/record_types/objects": {
-            "message": "Deploy unpackaged/pre/record_types/objects",
-            "description": "title of installation step"
-        },
-        "Opportunity Record Types, Stages, and Sales Processes": {
-            "message": "Opportunity Record Types, Stages, and Sales Processes",
-            "description": "title of installation step"
-        },
-        "Contact and Opportunity Picklists": {
-            "message": "Contact and Opportunity Picklists",
-            "description": "title of installation step"
-        },
-        "Opportunity Record Types, Business Processes and List Views": {
-            "message": "Opportunity Record Types, Business Processes and List Views",
-            "description": "title of installation step"
-        },
-        "Opportunity Record Types, Business Processes": {
-            "message": "Opportunity Record Types, Business Processes",
-            "description": "title of installation step"
-        },
-        "Account and Contact Page Layouts": {
-            "message": "Account and Contact Page Layouts",
-            "description": "title of installation step"
-        },
-        "Additional Post Installation Configuration": {
-            "message": "Additional Post Installation Configuration",
-            "description": "title of installation step"
-        },
-        "Account and Opportunity List Views": {
-            "message": "Account and Opportunity List Views",
-            "description": "title of installation step"
-        },
-        "Opportunity Stages": {
-            "message": "Opportunity Stages",
-            "description": "title of installation step"
-        },
-        "Opportunity Sales Processes and Record Types": {
-            "message": "Opportunity Sales Processes and Record Types",
-            "description": "title of installation step"
-        },
-        "Account, Contact (Gender) and Lead Objects configuration": {
-            "message": "Account, Contact (Gender) and Lead Objects configuration",
-            "description": "title of installation step"
-        },
-        "Contact Opportunity Contact Roles and Mx. Salutation": {
-            "message": "Contact Opportunity Contact Roles and Mx. Salutation",
-            "description": "title of installation step"
-        },
-        "Reciprocal Relationship Settings": {
-            "message": "Reciprocal Relationship Settings",
-            "description": "title of installation step"
-        },
-        "Manage Household Button": {
-            "message": "Manage Household Button",
-            "description": "title of installation step"
-        },
-        "Opportunity Contact Roles and Contact Mx. Salutation": {
-            "message": "Opportunity Contact Roles and Contact Mx. Salutation",
-            "description": "title of installation step"
-        },
-        "Activate Workflow Rules": {
-            "message": "Activate Workflow Rules",
-            "description": "title of installation step"
-        },
-        "Contact 'New Donation' Quick Action": {
-            "message": "Contact 'New Donation' Quick Action",
-            "description": "title of installation step"
-        },
-        "New NPSP Lightning Apps": {
-            "message": "New NPSP Lightning Apps",
-            "description": "title of installation step"
-        },
-        "NPSP System Administrator Profile": {
-            "message": "NPSP System Administrator Profile",
-            "description": "title of installation step"
-        },
-        "npsp_opp_stages": {
-            "message": "npsp_opp_stages",
-            "description": "title of installation step"
-        },
-        "npsp_opp_proc_rec": {
-            "message": "npsp_opp_proc_rec",
-            "description": "title of installation step"
-        },
-        "npsp_acc_con_lead": {
-            "message": "npsp_acc_con_lead",
-            "description": "title of installation step"
-        },
-        "npsp_opproles_mx": {
-            "message": "npsp_opproles_mx",
-            "description": "title of installation step"
-        },
-        "npsp_wf_rules": {
-            "message": "npsp_wf_rules",
-            "description": "title of installation step"
-        },
-        "npsp_hh_button": {
-            "message": "npsp_hh_button",
-            "description": "title of installation step"
-        },
-        "npsp_new_donation": {
-            "message": "npsp_new_donation",
-            "description": "title of installation step"
-        },
-        "npsp_new_lex_apps": {
-            "message": "npsp_new_lex_apps",
-            "description": "title of installation step"
-        },
-        "npsp_list_views": {
-            "message": "npsp_list_views",
-            "description": "title of installation step"
-        },
-        "npsp_profile": {
-            "message": "npsp_profile",
-            "description": "title of installation step"
-        },
-        "npsp_load_csettings": {
-            "message": "npsp_load_csettings",
-            "description": "title of installation step"
-        },
-        "npsp_org_address_enabled": {
-            "message": "npsp_org_address_enabled",
-            "description": "title of installation step"
-        },
-        "npsp_load_sdata": {
-            "message": "npsp_load_sdata",
             "description": "title of installation step"
         },
         "Configure Opportunity Stages": {
@@ -230,8 +38,16 @@
             "message": "Configure Opportunity Sales Processes and Record Types",
             "description": "title of installation step"
         },
+        "Account, Contact (Gender) and Lead Objects configuration": {
+            "message": "Account, Contact (Gender) and Lead Objects configuration",
+            "description": "title of installation step"
+        },
         "Add Opportunity Contact Roles and Contact Mx. Salutation": {
             "message": "Add Opportunity Contact Roles and Contact Mx. Salutation",
+            "description": "title of installation step"
+        },
+        "Activate Workflow Rules": {
+            "message": "Activate Workflow Rules",
             "description": "title of installation step"
         },
         "Configure Manage Household Button": {
