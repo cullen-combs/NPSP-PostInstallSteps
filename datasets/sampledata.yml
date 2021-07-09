@@ -287,6 +287,7 @@ Insert Opportunity:
   - Name
   - RecordTypeId
   - StageName
+  - Amount
   - npe01__Contact_Id_for_Role__c
   - npe01__Do_Not_Automatically_Create_Payment__c
   - npe01__Member_Level__c
