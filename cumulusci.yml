@@ -213,7 +213,7 @@ tasks:
         description: Load Reciprocal Relationship Settings
         class_path: cumulusci.tasks.salesforce.LoadCustomSettings
         options:
-            settings_path: datasets/relatinoships.yml
+            settings_path: datasets/relationships.yml
 
     npsp_org_address_enabled:
         description: Enable Address management for non-Household Accounts (Required if loading Sample Data)
