@@ -26,8 +26,8 @@ plans:
     steps:
         1:
             task: unschedule_apex
-            name: Unschedule Scheduled Apex Jobs
             ui_options:
+                name: Unschedule Scheduled Apex Jobs
                 is_required: False
                 is_recommended: True
         2:

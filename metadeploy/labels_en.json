@@ -221,6 +221,50 @@
         "npsp_load_sdata": {
             "message": "npsp_load_sdata",
             "description": "title of installation step"
+        },
+        "Configure Opportunity Stages": {
+            "message": "Configure Opportunity Stages",
+            "description": "title of installation step"
+        },
+        "Configure Opportunity Sales Processes and Record Types": {
+            "message": "Configure Opportunity Sales Processes and Record Types",
+            "description": "title of installation step"
+        },
+        "Add Opportunity Contact Roles and Contact Mx. Salutation": {
+            "message": "Add Opportunity Contact Roles and Contact Mx. Salutation",
+            "description": "title of installation step"
+        },
+        "Configure Manage Household Button": {
+            "message": "Configure Manage Household Button",
+            "description": "title of installation step"
+        },
+        "Configure Contact 'New Donation' Quick Action": {
+            "message": "Configure Contact 'New Donation' Quick Action",
+            "description": "title of installation step"
+        },
+        "Add NPSP Lightning and NPSP Admin Lightning Apps": {
+            "message": "Add NPSP Lightning and NPSP Admin Lightning Apps",
+            "description": "title of installation step"
+        },
+        "Configure Account and Opportunity List Views": {
+            "message": "Configure Account and Opportunity List Views",
+            "description": "title of installation step"
+        },
+        "Update System Administrator Profile": {
+            "message": "Update System Administrator Profile",
+            "description": "title of installation step"
+        },
+        "Load Reciprocal Relationship Settings": {
+            "message": "Load Reciprocal Relationship Settings",
+            "description": "title of installation step"
+        },
+        "Enable Address management for non-Household Accounts (Required if loading Sample Data)": {
+            "message": "Enable Address management for non-Household Accounts (Required if loading Sample Data)",
+            "description": "title of installation step"
+        },
+        "Load Sample Dataset for Organizations, Households, Donations, and Addresses": {
+            "message": "Load Sample Dataset for Organizations, Households, Donations, and Addresses",
+            "description": "title of installation step"
         }
     }
 }
