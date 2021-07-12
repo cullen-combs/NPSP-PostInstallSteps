@@ -166,60 +166,196 @@ tasks:
     npsp_opp_stages:
         description: Add Opportunity Stages
         class_path: cumulusci.tasks.salesforce.Deploy
+        group: "NPSP: Post Installation"
         options:
             path: unpackaged/pre/picklists/opportunity
+
+    npsp_opp_stages_etl:
+        description: Add Opportunity Stages
+        class_path: cumulusci.tasks.metadata_etl.AddValueSetEntries
+        group: "NPSP: Post Installation"
+        options:
+            entries:
+              - fullName: "Application Received"
+                description: "Our organization has been notified that the grant application was received."
+                label: "Application Received"
+                closed: "false"
+                forecastCategory: "Pipeline"
+                probability: "30"
+                won: "false"
+                active: "false"
+              - fullName: "Application Submitted"
+                label: "Application Submitted"
+                closed: "false"
+                forecastCategory: "Pipeline"
+                probability: "30"
+                won: "false"
+              - fullName: "Awarded"
+                label: "Awarded"
+                closed: "true"
+                forecastCategory: "Closed"
+                probability: "100"
+                won: "true"
+              - fullName: "Closed Lost"
+                label: "Closed Lost"
+                closed: "true"
+                forecastCategory: "Omitted"
+                probability: "0"
+                won: "false"
+              - fullName: "Closed Won"
+                label: "Closed Won"
+                closed: "true"
+                forecastCategory: "Closed"
+                probability: "100"
+                won: "true"
+              - fullName: "Cultivation"
+                label: "Cultivation"
+                closed: "false"
+                forecastCategory: "Pipeline"
+                probability: "30"
+                won: "false"
+              - fullName: "Declined"
+                label: "Declined"
+                closed: "true"
+                forecastCategory: "Omitted"
+                probability: "0"
+                won: "false"
+              - fullName: "Identification"
+                label: "Identification"
+                closed: "false"
+                forecastCategory: "Pipeline"
+                probability: "10"
+                won: "false"
+              - fullName: "In-Kind Not Yet Received"
+                label: "In-Kind Not Yet Received"
+                closed: "false"
+                forecastCategory: "Omitted"
+                probability: "50"
+                won: "false"
+              - fullName: "In-Kind Received"
+                label: "In-Kind Received"
+                closed: "true"
+                forecastCategory: "Omitted"
+                probability: "100"
+                won: "true"
+              - fullName: "LOI Submitted"
+                label: "LOI Submitted"
+                closed: "false"
+                forecastCategory: "Pipeline"
+                probability: "20"
+                won: "false"
+              - fullName: "Pledged"
+                label: "Pledged"
+                closed: "false"
+                forecastCategory: "Pipeline"
+                probability: "50"
+                won: "false"
+              - fullName: "Posted"
+                label: "Posted"
+                closed: "true"
+                forecastCategory: "Closed"
+                probability: "100"
+                won: "true"
+              - fullName: "Proposal/Review"
+                label: "Proposal/Review"
+                closed: "false"
+                forecastCategory: "BestCase"
+                probability: "60"
+                won: "false"
+              - fullName: "Prospecting"
+                label: "Prospecting"
+                closed: "false"
+                forecastCategory: "Pipeline"
+                probability: "10"
+                won: "false"
+              - fullName: "Qualification"
+                label: "Qualification"
+                closed: "false"
+                forecastCategory: "Pipeline"
+                probability: "10"
+                won: "false"
+              - fullName: "Solicitation"
+                label: "Solicitation"
+                closed: "false"
+                forecastCategory: "Pipeline"
+                probability: "40"
+                won: "false"
+              - fullName: "Verbal Commitment"
+                label: "Verbal Commitment"
+                closed: "false"
+                forecastCategory: "Forecast"
+                probability: "80"
+                won: "false"
+              - fullName: "Withdrawn"
+                label: "Withdrawn"
+                closed: "true"
+                forecastCategory: "Omitted"
+                probability: "0"
+                won: "false"
+            api_names:
+              - OpportunityStage
+
 
     npsp_opp_proc_rec:
         description: Configure Opportunity Sales Processes and Record Types
         class_path: cumulusci.tasks.salesforce.Deploy
+        group: "NPSP: Post Installation"
         options:
             path: unpackaged/pre/record_types/opportunity
 
     npsp_acc_con_lead:
         description: Account, Contact (Gender) and Lead Objects configuration
         class_path: cumulusci.tasks.salesforce.Deploy
+        group: "NPSP: Post Installation"
         options:
             path: unpackaged/pre/objects
 
     npsp_opproles_mx:
         description: Add Opportunity Contact Roles and Contact Mx. Salutation
         class_path: cumulusci.tasks.salesforce.Deploy
+        group: "NPSP: Post Installation"
         options:
             path: unpackaged/pre/picklists/contact
 
     npsp_wf_rules:
         description: Activate Workflow Rules
         class_path: cumulusci.tasks.salesforce.Deploy
+        group: "NPSP: Post Installation"
         options:
             path: unpackaged/pre/workflows
 
     npsp_hh_button:
         description: Configure Manage Household Button
         class_path: cumulusci.tasks.salesforce.Deploy
+        group: "NPSP: Post Installation"
         options:
             path: unpackaged/pre/layouts
 
     npsp_new_donation:
         description: Configure Contact 'New Donation' Quick Action
         class_path: cumulusci.tasks.salesforce.Deploy
+        group: "NPSP: Post Installation"
         options:
             path: unpackaged/pre/quickaction
 
     npsp_new_lex_apps:
         description: Add NPSP Lightning and NPSP Admin Lightning Apps
         class_path: cumulusci.tasks.salesforce.Deploy
+        group: "NPSP: Post Installation"
         options:
             path: unpackaged/pre/application
 
     npsp_list_views:
         description: Configure Account and Opportunity List Views
         class_path: cumulusci.tasks.salesforce.Deploy
+        group: "NPSP: Post Installation"
         options:
             path: unpackaged/pre/listviews
 
     npsp_profile:
         description: Retrieve, update, and redeploy the Admin profile with FLS perms for objects and fields
         class_path: cumulusci.tasks.salesforce.ProfileGrantAllAccess
+        group: "NPSP: Post Installation"
         options:
             record_types:
                 - record_type: Account.HH_Account
@@ -237,18 +373,21 @@ tasks:
     npsp_load_csettings:
         description: Load Reciprocal Relationship Settings
         class_path: cumulusci.tasks.salesforce.LoadCustomSettings
+        group: "NPSP: Post Installation"
         options:
             settings_path: datasets/relationships.yml
 
     npsp_org_address_enabled:
         description: Enable Address management for non-Household Accounts (Required if loading Sample Data)
         class_path: cumulusci.tasks.salesforce.LoadCustomSettings
+        group: "NPSP: Post Installation"
         options:
             settings_path: datasets/org_address_enabled.yml
 
     npsp_load_sdata:
         description: Load Sample Dataset for Organizations, Households, Donations, and Addresses
         class_path: cumulusci.tasks.bulkdata.LoadData
+        group: "NPSP: Post Installation"
         options:
             mapping: datasets/sampledata.yml
             sql_path: datasets/sampledata.sql
@@ -256,6 +395,7 @@ tasks:
     npsp_delete_sdata:
         description: Delete Sample Dataset for Organizations, Households, Donations, and Addresses
         class_path: cumulusci.tasks.bulkdata.DeleteData
+        group: "NPSP: Post Installation"
         options:
             objects: Opportunity, npe03__Recurring_Donation__c, Contact, npsp__Address__c, Account, npsp__Batch__c, npo02__Household__c, Campaign
             ignore_row_errors: True

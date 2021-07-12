@@ -4,7 +4,6 @@
     <standardValue>
         <fullName>Application Received</fullName>
         <default>false</default>
-        <description>Our organization has been notified that the grant application was received.</description>
         <label>Application Received</label>
         <closed>false</closed>
         <forecastCategory>Pipeline</forecastCategory>
