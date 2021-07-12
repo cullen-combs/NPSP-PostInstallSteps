@@ -3,79 +3,7 @@
     <fullName>NPSP_Default</fullName>
     <isActive>true</isActive>
     <values>
-        <fullName>Application Received</fullName>
-        <default>false</default>
-    </values>
-    <values>
-        <fullName>Application Submitted</fullName>
-        <default>false</default>
-    </values>
-    <values>
-        <fullName>Awarded</fullName>
-        <default>false</default>
-    </values>
-    <values>
-        <fullName>Closed Lost</fullName>
-        <default>false</default>
-    </values>
-    <values>
-        <fullName>Closed Won</fullName>
-        <default>false</default>
-    </values>
-    <values>
-        <fullName>Cultivation</fullName>
-        <default>false</default>
-    </values>
-    <values>
-        <fullName>Declined</fullName>
-        <default>false</default>
-    </values>
-    <values>
-        <fullName>Identification</fullName>
-        <default>false</default>
-    </values>
-    <values>
-        <fullName>In-Kind Not Yet Received</fullName>
-        <default>false</default>
-    </values>
-    <values>
-        <fullName>In-Kind Received</fullName>
-        <default>false</default>
-    </values>
-    <values>
-        <fullName>LOI Submitted</fullName>
-        <default>false</default>
-    </values>
-    <values>
-        <fullName>Pledged</fullName>
-        <default>false</default>
-    </values>
-    <values>
-        <fullName>Posted</fullName>
-        <default>false</default>
-    </values>
-    <values>
-        <fullName>Proposal%2FReview</fullName>
-        <default>false</default>
-    </values>
-    <values>
         <fullName>Prospecting</fullName>
-        <default>false</default>
-    </values>
-    <values>
-        <fullName>Qualification</fullName>
-        <default>false</default>
-    </values>
-    <values>
-        <fullName>Solicitation</fullName>
-        <default>false</default>
-    </values>
-    <values>
-        <fullName>Verbal Commitment</fullName>
-        <default>false</default>
-    </values>
-    <values>
-        <fullName>Withdrawn</fullName>
         <default>false</default>
     </values>
 </BusinessProcess>
