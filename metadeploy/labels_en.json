@@ -1,0 +1,98 @@
+{
+    "product": {
+        "title": {
+            "message": "NPSP Post Installation Configuration",
+            "description": "name of product"
+        },
+        "short_description": {
+            "message": "NPSP Post Installation Configuration - details here: http://sfdc.co/bx6gce",
+            "description": "tagline of product"
+        }
+    },
+    "plan:install": {
+        "title": {
+            "message": "Install NPSP Post Install Template",
+            "description": "title of installation plan"
+        }
+    },
+    "checks": {
+        "Please enable My Domain in your org prior to installing.": {
+            "message": "Please enable My Domain in your org prior to installing.",
+            "description": "shown if validation fails"
+        },
+        "NPSP Post Installation requires the Nonprofit Success Pack. Please install the Nonprofit Success Pack and try again.": {
+            "message": "NPSP Post Installation requires the Nonprofit Success Pack. Please install the Nonprofit Success Pack and try again.",
+            "description": "shown if validation fails"
+        }
+    },
+    "steps": {
+        "Unschedule Scheduled Apex Jobs": {
+            "message": "Unschedule Scheduled Apex Jobs",
+            "description": "title of installation step"
+        },
+        "Configure Opportunity Stages": {
+            "message": "Configure Opportunity Stages",
+            "description": "title of installation step"
+        },
+        "Configure Opportunity Sales Processes and Record Types": {
+            "message": "Configure Opportunity Sales Processes and Record Types",
+            "description": "title of installation step"
+        },
+        "Account, Contact (Gender) and Lead Objects configuration": {
+            "message": "Account, Contact (Gender) and Lead Objects configuration",
+            "description": "title of installation step"
+        },
+        "Add Opportunity Contact Roles and Contact Mx. Salutation": {
+            "message": "Add Opportunity Contact Roles and Contact Mx. Salutation",
+            "description": "title of installation step"
+        },
+        "Activate Workflow Rules": {
+            "message": "Activate Workflow Rules",
+            "description": "title of installation step"
+        },
+        "Configure Contact 'New Donation' Quick Action": {
+            "message": "Configure Contact 'New Donation' Quick Action",
+            "description": "title of installation step"
+        },
+        "Configure Manage Household Button": {
+            "message": "Configure Manage Household Button",
+            "description": "title of installation step"
+        },
+        "Add NPSP Lightning and NPSP Admin Lightning Apps": {
+            "message": "Add NPSP Lightning and NPSP Admin Lightning Apps",
+            "description": "title of installation step"
+        },
+        "Configure Account and Opportunity List Views": {
+            "message": "Configure Account and Opportunity List Views",
+            "description": "title of installation step"
+        },
+        "Update Admin profile permissions and record types": {
+            "message": "Update Admin profile permissions and record types",
+            "description": "title of installation step"
+        },
+        "Update Admin profile record type and layout assignments": {
+            "message": "Update Admin profile record type and layout assignments",
+            "description": "title of installation step"
+        },
+        "Load Reciprocal Relationship Settings": {
+            "message": "Load Reciprocal Relationship Settings",
+            "description": "title of installation step"
+        },
+        "Enable Address management for non-Household Accounts (Required if loading Sample Data)": {
+            "message": "Enable Address management for non-Household Accounts (Required if loading Sample Data)",
+            "description": "title of installation step"
+        },
+        "Disable NPSP TDTM Triggers (Required if loading sample data)": {
+            "message": "Disable NPSP TDTM Triggers (Required if loading sample data)",
+            "description": "title of installation step"
+        },
+        "Load Sample Dataset for Organizations, Households, Donations, and Addresses": {
+            "message": "Load Sample Dataset for Organizations, Households, Donations, and Addresses",
+            "description": "title of installation step"
+        },
+        "Re-enable NPSP TDTM Triggers (Required if TDTM were disabled)": {
+            "message": "Re-enable NPSP TDTM Triggers (Required if TDTM were disabled)",
+            "description": "title of installation step"
+        }
+    }
+}
