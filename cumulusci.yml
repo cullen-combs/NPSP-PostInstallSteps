@@ -69,7 +69,7 @@ plans:
             ui_options:
                 name: Configure Account and Opportunity List Views
         11:
-            task: npsp_profile
+            flow: npsp_profile
             ui_options:
                 name: Update System Administrator Profile
         12:
@@ -133,7 +133,7 @@ flows:
           9:
             task: npsp_list_views
           10:
-            task: npsp_profile
+            flow: npsp_profile
           11:
             task: npsp_load_csettings
           12:
@@ -173,9 +173,30 @@ flows:
           9:
             task: npsp_list_views
           10:
-            task: npsp_profile
+            flow: npsp_profile
           11:
             task: npsp_load_csettings
+
+    npsp_profile:
+        description: Update Admin profile permissions, record types, and layout assignments
+        steps:
+          1:
+            task: update_admin_profile
+            options:
+              record_types:
+                - record_type: Account.HH_Account
+                - record_type: Account.Organization
+                  default: true
+                - record_type: Opportunity.NPSP_Default
+                - record_type: Opportunity.Membership
+                - record_type: Opportunity.Matching_Gift
+                - record_type: Opportunity.Major_Gift
+                - record_type: Opportunity.In_Kind_Gift
+                - record_type: Opportunity.Grant
+                - record_type: Opportunity.Donation
+                  default: true
+          2:
+            task: npsp_admin_profile
 
 tasks:
     robot:
@@ -382,23 +403,12 @@ tasks:
         options:
             path: unpackaged/pre/listviews
 
-    npsp_profile:
-        description: Retrieve, update, and redeploy the Admin profile with FLS perms for objects and fields
-        class_path: cumulusci.tasks.salesforce.ProfileGrantAllAccess
+    npsp_admin_profile:
+        description: Update Admin profile record type and layout assignements
+        class_path: cumulusci.tasks.salesforce.Deploy
         group: "NPSP: Post Installation"
         options:
-            record_types:
-                - record_type: Account.HH_Account
-                - record_type: Account.Organization
-                  default: true
-                - record_type: Opportunity.NPSP_Default
-                - record_type: Opportunity.Membership
-                - record_type: Opportunity.Matching_Gift
-                - record_type: Opportunity.Major_Gift
-                - record_type: Opportunity.In_Kind_Gift
-                - record_type: Opportunity.Grant
-                - record_type: Opportunity.Donation
-                  default: true
+            path: unpackaged/pre/profile
 
     npsp_load_csettings:
         description: Load Reciprocal Relationship Settings

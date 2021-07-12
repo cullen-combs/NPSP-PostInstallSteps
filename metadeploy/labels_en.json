@@ -89,6 +89,10 @@
         "Re-eanble NPSP TDTM Triggers (Required if TDTM were disabled)": {
             "message": "Re-eanble NPSP TDTM Triggers (Required if TDTM were disabled)",
             "description": "title of installation step"
+        },
+        "Re-enable NPSP TDTM Triggers (Required if TDTM were disabled)": {
+            "message": "Re-enable NPSP TDTM Triggers (Required if TDTM were disabled)",
+            "description": "title of installation step"
         }
     }
 }
