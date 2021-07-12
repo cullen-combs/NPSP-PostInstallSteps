@@ -178,10 +178,13 @@ flows:
             task: npsp_load_csettings
 
     npsp_profile:
-        description: Update Admin profile permissions, record types, and layout assignments
         steps:
           1:
             task: update_admin_profile
+            ui_options:
+                name: Update Admin profile permissions and record types
+                is_required: True
+                is_recommended: True
             options:
               record_types:
                 - record_type: Account.HH_Account
@@ -197,8 +200,13 @@ flows:
                   default: true
           2:
             task: deploy
+            ui_options:
+                name: Update Admin profile record type and layout assignments
+                is_required: True
+                is_recommended: True
             options:
               path: unpackaged/pre/profile
+
 tasks:
     robot:
         options:
