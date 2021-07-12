@@ -196,8 +196,9 @@ flows:
                 - record_type: Opportunity.Donation
                   default: true
           2:
-            task: npsp_admin_profile
-
+            task: deploy
+            options:
+              path: unpackaged/pre/profile
 tasks:
     robot:
         options:
@@ -402,13 +403,6 @@ tasks:
         group: "NPSP: Post Installation"
         options:
             path: unpackaged/pre/listviews
-
-    npsp_admin_profile:
-        description: Update Admin profile record type and layout assignements
-        class_path: cumulusci.tasks.salesforce.Deploy
-        group: "NPSP: Post Installation"
-        options:
-            path: unpackaged/pre/profile
 
     npsp_load_csettings:
         description: Load Reciprocal Relationship Settings

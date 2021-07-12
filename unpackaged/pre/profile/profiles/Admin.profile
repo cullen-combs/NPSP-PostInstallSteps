@@ -12,33 +12,39 @@
     </applicationVisibilities>
     <layoutAssignments>
         <layout>Account-Account Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Account-npsp__Household Layout</layout>
         <recordType>Account.HH_Account</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Account-Account Layout</layout>
+        <layout>Account-npsp__Organization Layout</layout>
         <recordType>Account.Organization</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Campaign-npsp__NPSP Campaign Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Contact-npsp__Contact Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Opportunity-Opportunity Layout</layout>
+        <layout>Opportunity-npsp__Donation Layout</layout>
         <recordType>Opportunity.Donation</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Opportunity-Opportunity Layout</layout>
+        <layout>Opportunity-npsp__Grant Layout</layout>
         <recordType>Opportunity.Grant</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Opportunity-Opportunity Layout</layout>
+        <layout>Opportunity-npsp__In-Kind Gift Layout</layout>
         <recordType>Opportunity.In_Kind_Gift</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Opportunity-Opportunity Layout</layout>
+        <layout>Opportunity-npsp__Major Gift Layout</layout>
         <recordType>Opportunity.Major_Gift</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Opportunity-Opportunity Layout</layout>
+        <layout>Opportunity-npsp__Matching Gift Layout</layout>
         <recordType>Opportunity.Matching_Gift</recordType>
     </layoutAssignments>
     <layoutAssignments>
@@ -46,7 +52,7 @@
         <recordType>Opportunity.Membership</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Opportunity-Opportunity Layout</layout>
+        <layout>Opportunity-npsp__Donation Layout</layout>
         <recordType>Opportunity.NPSP_Default</recordType>
     </layoutAssignments>
     <recordTypeVisibilities>
