@@ -102,7 +102,7 @@ plans:
         16:
             task: restore_tdtm_trigger_handlers
             ui_options:
-                name: Re-eanble NPSP TDTM Triggers (Required if TDTM were disabled)
+                name: Re-enable NPSP TDTM Triggers (Required if TDTM were disabled)
                 is_required: False
                 is_recommended: True
             options:

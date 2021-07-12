@@ -81,6 +81,14 @@
         "Load Sample Dataset for Organizations, Households, Donations, and Addresses": {
             "message": "Load Sample Dataset for Organizations, Households, Donations, and Addresses",
             "description": "title of installation step"
+        },
+        "Disable NPSP TDTM Triggers (Required if loading sample data)": {
+            "message": "Disable NPSP TDTM Triggers (Required if loading sample data)",
+            "description": "title of installation step"
+        },
+        "Re-eanble NPSP TDTM Triggers (Required if TDTM were disabled)": {
+            "message": "Re-eanble NPSP TDTM Triggers (Required if TDTM were disabled)",
+            "description": "title of installation step"
         }
     }
 }
