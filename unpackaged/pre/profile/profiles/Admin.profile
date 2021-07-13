@@ -3,7 +3,7 @@
     <applicationVisibilities>
         <application>NPSP_Admin</application>
         <default>false</default>
-        <visible>false</visible>
+        <visible>true</visible>
     </applicationVisibilities>
     <applicationVisibilities>
         <application>Nonprofit_Success_Pack</application>
