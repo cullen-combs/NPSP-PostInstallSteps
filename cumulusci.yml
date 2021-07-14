@@ -12,7 +12,7 @@ project:
 plans:
   install:
     slug: install
-    title: Install NPSP Post Install Template
+    title: Install NPSP Post Installation Template
     tier: primary
     description: NPSP Post Installation steps template
     is_listed: True
