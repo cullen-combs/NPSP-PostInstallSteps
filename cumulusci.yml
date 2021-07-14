@@ -94,12 +94,18 @@ plans:
               namespace: npsp
               active: False
         15:
-            task: npsp_load_sdata
+            task: npsp_delete_sdata
             ui_options:
-                name: Load Sample Dataset for Organizations, Households, Donations, and Addresses
+                name: Delete all data for Organizations, Households, Donations, and Addresses (Recommended if you are loading sample data)
                 is_required: False
                 is_recommended: True
         16:
+            task: npsp_load_sdata
+            ui_options:
+                name: Load Sample data for Organizations, Households, Donations, and Addresses
+                is_required: False
+                is_recommended: True
+        17:
             task: restore_tdtm_trigger_handlers
             ui_options:
                 name: Restore NPSP TDTM Triggers status (Required if TDTM were disabled)
@@ -144,8 +150,10 @@ flows:
               namespace: npsp
               active: False
           14:
-            task: npsp_load_sdata
+            task: npsp_delete_sdata
           15:
+            task: npsp_load_sdata
+          16:
             task: restore_tdtm_trigger_handlers
             options:
               namespace: npsp
@@ -430,6 +438,7 @@ tasks:
         description: Load Sample Dataset for Organizations, Households, and Addresses
         class_path: cumulusci.tasks.bulkdata.LoadData
         group: "NPSP: Post Installation"
+        when: 
         options:
             mapping: datasets/sampledata.yml
             sql_path: datasets/sampledata.sql

@@ -93,6 +93,18 @@
         "Re-enable NPSP TDTM Triggers (Required if TDTM were disabled)": {
             "message": "Re-enable NPSP TDTM Triggers (Required if TDTM were disabled)",
             "description": "title of installation step"
+        },
+        "Account (Edit & View buttons), Lead (Convert button), & Contact (Gender field)": {
+            "message": "Account (Edit & View buttons), Lead (Convert button), & Contact (Gender field)",
+            "description": "title of installation step"
+        },
+        "Configure Contact Quick Actions": {
+            "message": "Configure Contact Quick Actions",
+            "description": "title of installation step"
+        },
+        "Restore NPSP TDTM Triggers status (Required if TDTM were disabled)": {
+            "message": "Restore NPSP TDTM Triggers status (Required if TDTM were disabled)",
+            "description": "title of installation step"
         }
     }
 }
