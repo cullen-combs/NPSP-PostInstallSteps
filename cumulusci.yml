@@ -41,7 +41,7 @@ plans:
         4:
             task: npsp_acc_con_lead
             ui_options:
-                name: Account, Contact (Gender) and Lead Objects configuration
+                name: Account (Edit & View buttons), Lead (Convert button), & Contact (Gender field)
         5:
             task: npsp_opproles_mx
             ui_options:
@@ -55,7 +55,7 @@ plans:
         7:
             task: npsp_new_donation
             ui_options:
-                name: Configure Contact 'New Donation' Quick Action
+                name: Configure Contact Quick Actions
         8:
             task: npsp_hh_button
             ui_options:
@@ -107,7 +107,7 @@ plans:
                 is_recommended: True
             options:
               namespace: npsp
-              restore: False
+              restore: True
 
 
 flows:
@@ -149,7 +149,7 @@ flows:
             task: restore_tdtm_trigger_handlers
             options:
               namespace: npsp
-              restore: False
+              restore: True
 
     config_only:
         description: NPSP Post Installation Configuration Only
@@ -364,7 +364,7 @@ tasks:
             path: unpackaged/pre/record_types/opportunity
 
     npsp_acc_con_lead:
-        description: Account, Contact (Gender) and Lead Objects configuration
+        description: Account (Edit & View Buttons), Lead (Convert Button), & Contact (Gender field)
         class_path: cumulusci.tasks.salesforce.Deploy
         group: "NPSP: Post Installation"
         options:
@@ -392,7 +392,7 @@ tasks:
             path: unpackaged/pre/layouts
 
     npsp_new_donation:
-        description: Configure Contact 'New Donation' Quick Action
+        description: Configure Contact Quick Actions
         class_path: cumulusci.tasks.salesforce.Deploy
         group: "NPSP: Post Installation"
         options:

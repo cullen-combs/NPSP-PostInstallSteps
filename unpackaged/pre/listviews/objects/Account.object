@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
     <listViews xmlns="http://soap.sforce.com/2006/04/metadata">
-        <fullName>All_Accounts</fullName>
+        <fullName>All_Organizations_and_Households</fullName>
         <columns>ACCOUNT.NAME</columns>
         <columns>npo02__Formal_Greeting__c</columns>
         <columns>npo02__Informal_Greeting__c</columns>
@@ -10,7 +10,7 @@
         <columns>npo02__Best_Gift_Year__c</columns>
         <columns>npo02__HouseholdPhone__c</columns>
         <filterScope>Everything</filterScope>
-        <label>All Accounts</label>
+        <label>All Organizations and Households</label>
     </listViews>
     <listViews>
         <fullName>Organization_Accounts</fullName>
