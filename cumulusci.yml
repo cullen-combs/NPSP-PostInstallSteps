@@ -438,7 +438,6 @@ tasks:
         description: Load Sample Dataset for Organizations, Households, and Addresses
         class_path: cumulusci.tasks.bulkdata.LoadData
         group: "NPSP: Post Installation"
-        when: 
         options:
             mapping: datasets/sampledata.yml
             sql_path: datasets/sampledata.sql
