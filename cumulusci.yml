@@ -115,7 +115,6 @@ plans:
               namespace: npsp
               restore: True
 
-
 flows:
     complete_install:
         description: NPSP Post Installation Configuration and Sample Data
