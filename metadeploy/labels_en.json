@@ -11,7 +11,7 @@
     },
     "plan:install": {
         "title": {
-            "message": "Install NPSP Post Install Template",
+            "message": "Install NPSP Post Installation Template",
             "description": "title of installation plan"
         }
     },
@@ -104,6 +104,10 @@
         },
         "Restore NPSP TDTM Triggers status (Required if TDTM were disabled)": {
             "message": "Restore NPSP TDTM Triggers status (Required if TDTM were disabled)",
+            "description": "title of installation step"
+        },
+        "Load Sample data for Organizations, Households, Donations, and Addresses": {
+            "message": "Load Sample data for Organizations, Households, Donations, and Addresses",
             "description": "title of installation step"
         }
     }
