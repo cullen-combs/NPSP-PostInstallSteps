@@ -113,6 +113,26 @@
         "Update Admin profile object and field access permissions": {
             "message": "Update Admin profile object and field access permissions",
             "description": "title of installation step"
+        },
+        "enable_crlp": {
+            "message": "enable_crlp",
+            "description": "title of installation step"
+        },
+        "custom_settings_value_wait": {
+            "message": "custom_settings_value_wait",
+            "description": "title of installation step"
+        },
+        "execute_anon": {
+            "message": "execute_anon",
+            "description": "title of installation step"
+        },
+        "deploy_rd2_config": {
+            "message": "deploy_rd2_config",
+            "description": "title of installation step"
+        },
+        "batch_apex_wait": {
+            "message": "batch_apex_wait",
+            "description": "title of installation step"
         }
     }
 }
