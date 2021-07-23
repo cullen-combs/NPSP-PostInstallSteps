@@ -83,7 +83,7 @@ plans:
                 is_required: False
                 is_recommended: True
         13:
-            flow: enable_rd2
+            flow: npsp:enable_rd2_managed
             ui_options:
                 name: Enable Enhanced Recurring Donations
                 is_required: False
@@ -120,12 +120,6 @@ plans:
               restore: True
 
 flows:
-    enable_rd2:
-        description: Enable Enhanced Recurring Donation
-        steps:
-          1:
-            flow: npsp:enable_rd2_managed
-
     complete_install:
         description: NPSP Post Installation Configuration and Sample Data
         steps:
