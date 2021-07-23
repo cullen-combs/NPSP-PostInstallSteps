@@ -9,6 +9,11 @@ project:
         repo_url: https://github.com/SFDO-Alliances/NPSP-PostInstallSteps
     source_format: sfdx
 
+sources:
+    npsp:
+        github: https://github.com/SalesforceFoundation/NPSP
+        release: latest
+
 plans:
   install:
     slug: install
@@ -79,12 +84,18 @@ plans:
                 is_required: False
                 is_recommended: True
         13:
+            flow: npsp:enable_rd2_managed
+            ui_options:
+                name: Enable Enhanced Recurring Donations
+                is_required: False
+                is_recommended: True
+        14:
             task: npsp_org_address_enabled
             ui_options:
                 name: Enable Address management for non-Household Accounts (Required if loading Sample Data)
                 is_required: False
                 is_recommended: True
-        14:
+        15:
             task: disable_tdtm_trigger_handlers
             ui_options:
                 name: Disable NPSP TDTM Triggers (Required if loading sample data)
@@ -93,13 +104,13 @@ plans:
             options:
               namespace: npsp
               active: False
-        15:
+        16:
             task: npsp_load_sdata
             ui_options:
                 name: Load Sample data for Organizations, Households, Donations, and Addresses
                 is_required: False
                 is_recommended: True
-        16:
+        17:
             task: restore_tdtm_trigger_handlers
             ui_options:
                 name: Restore NPSP TDTM Triggers status (Required if TDTM were disabled)
@@ -136,15 +147,17 @@ flows:
           11:
             task: npsp_load_csettings
           12:
-            task: npsp_org_address_enabled
+            flow: npsp:enable_rd2_managed
           13:
+            task: npsp_org_address_enabled
+          14:
             task: disable_tdtm_trigger_handlers
             options:
               namespace: npsp
               active: False
-          14:
-            task: npsp_load_sdata
           15:
+            task: npsp_load_sdata
+          16:
             task: restore_tdtm_trigger_handlers
             options:
               namespace: npsp
@@ -175,6 +188,8 @@ flows:
             flow: npsp_profile
           11:
             task: npsp_load_csettings
+          12:
+            flow: npsp:enable_rd2_managed
 
     npsp_profile:
         steps:
