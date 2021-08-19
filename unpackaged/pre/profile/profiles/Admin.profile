@@ -45,10 +45,6 @@
         <recordType>Opportunity.Matching_Gift</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Opportunity-Opportunity Layout</layout>
-        <recordType>Opportunity.Membership</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
         <layout>Opportunity-npsp__Donation Layout</layout>
         <recordType>Opportunity.NPSP_Default</recordType>
     </layoutAssignments>
