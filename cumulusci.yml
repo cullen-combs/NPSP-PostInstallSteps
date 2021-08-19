@@ -434,10 +434,11 @@ tasks:
 
     npsp_org_address_enabled:
         description: Enable Address management for non-Household Accounts (Required if loading Sample Data)
-        class_path: cumulusci.tasks.salesforce.LoadCustomSettings
+        class_path: cumulusci.tasks.apex.anon.AnonymousApexTask
         group: "NPSP: Post Installation"
         options:
-            settings_path: datasets/org_address_enabled.yml
+            path: datasets/org_enable_address.cls
+            apex: enable_address();
 
     npsp_load_sdata:
         description: Load Sample Dataset for Organizations, Households, and Addresses
