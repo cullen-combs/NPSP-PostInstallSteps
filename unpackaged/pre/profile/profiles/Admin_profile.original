@@ -11,6 +11,9 @@
         <visible>true</visible>
     </applicationVisibilities>
     <layoutAssignments>
+        <layout>Account-Account Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>Account-npsp__Household Layout</layout>
         <recordType>Account.HH_Account</recordType>
     </layoutAssignments>
