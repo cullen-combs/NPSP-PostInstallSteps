@@ -455,3 +455,11 @@ tasks:
         options:
             objects: Opportunity, npe03__Recurring_Donation__c, Contact, npsp__Address__c, Account, npsp__Batch__c, npo02__Household__c, Campaign
             ignore_row_errors: True
+
+    npsp_load_devdata:
+        description: Load Sample Dataset into a Developer Org for Organizations, Households, and Addresses
+        class_path: cumulusci.tasks.bulkdata.LoadData
+        group: "NPSP: Post Installation"
+        options:
+            mapping: datasets/sampledatadev.yml
+            sql_path: datasets/sampledatadev.sql
