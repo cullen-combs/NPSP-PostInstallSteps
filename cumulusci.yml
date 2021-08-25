@@ -11,7 +11,7 @@ project:
 
 sources:
     npsp:
-        github: https://github.com/SFDO-Alliances/NPSP
+        github: https://github.com/SalesforceFoundation/NPSP
 
 plans:
   install:
