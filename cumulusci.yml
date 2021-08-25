@@ -447,6 +447,7 @@ tasks:
         options:
             mapping: datasets/sampledata.yml
             sql_path: datasets/sampledata.sql
+            drop_missing_schema: True
 
     npsp_delete_sdata:
         description: Delete Sample Dataset for Organizations, Households, Donations, and Addresses
