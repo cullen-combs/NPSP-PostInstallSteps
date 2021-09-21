@@ -126,19 +126,19 @@
         <label>Grant</label>
     </recordTypes>
     <recordTypes>
-        <fullName>In_Kind_Gift</fullName>
+        <fullName>InKindGift</fullName>
         <active>true</active>
         <businessProcess>In-Kind Gift</businessProcess>
         <label>In-Kind Gift</label>
     </recordTypes>
     <recordTypes>
-        <fullName>Major_Gift</fullName>
+        <fullName>MajorGift</fullName>
         <active>true</active>
         <businessProcess>Major Gift</businessProcess>
         <label>Major Gift</label>
     </recordTypes>
     <recordTypes>
-        <fullName>Matching_Gift</fullName>
+        <fullName>MatchingGift</fullName>
         <active>true</active>
         <businessProcess>Donation</businessProcess>
         <label>Matching Gift</label>
