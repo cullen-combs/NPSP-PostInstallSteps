@@ -865,9 +865,9 @@ CREATE TABLE "Opportunity_rt_mapping" (
 );
 INSERT INTO "Opportunity_rt_mapping" VALUES('0121F000003k3rdQAA','Donation');
 INSERT INTO "Opportunity_rt_mapping" VALUES('0121F000003k3reQAA','Grant');
-INSERT INTO "Opportunity_rt_mapping" VALUES('0121F000003k3rfQAA','In_Kind_Gift');
-INSERT INTO "Opportunity_rt_mapping" VALUES('0121F000003k3rgQAA','Major_Gift');
-INSERT INTO "Opportunity_rt_mapping" VALUES('0121F000003k3rhQAA','Matching_Gift');
+INSERT INTO "Opportunity_rt_mapping" VALUES('0121F000003k3rfQAA','InKindGift');
+INSERT INTO "Opportunity_rt_mapping" VALUES('0121F000003k3rgQAA','MajorGift');
+INSERT INTO "Opportunity_rt_mapping" VALUES('0121F000003k3rhQAA','MatchingGift');
 INSERT INTO "Opportunity_rt_mapping" VALUES('0121F000003k3riQAA','Membership');
 INSERT INTO "Opportunity_rt_mapping" VALUES('0121F000003k3AsQAI','NPSP_Default');
 CREATE TABLE "npe03__Recurring_Donation__c" (

@@ -47,6 +47,6 @@
     <standardLabel>NewRecordType</standardLabel>
     <targetObject>Opportunity</targetObject>
     <targetParentField>npsp__Primary_Contact__c</targetParentField>
-    <targetRecordType>Opportunity.In_Kind_Gift</targetRecordType>
+    <targetRecordType>Opportunity.InKindGift</targetRecordType>
     <type>Create</type>
 </QuickAction>

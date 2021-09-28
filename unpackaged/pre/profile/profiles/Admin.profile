@@ -34,15 +34,15 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Opportunity-npsp__In-Kind Gift Layout</layout>
-        <recordType>Opportunity.In_Kind_Gift</recordType>
+        <recordType>Opportunity.InKindGift</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Opportunity-npsp__Major Gift Layout</layout>
-        <recordType>Opportunity.Major_Gift</recordType>
+        <recordType>Opportunity.MajorGift</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Opportunity-npsp__Matching Gift Layout</layout>
-        <recordType>Opportunity.Matching_Gift</recordType>
+        <recordType>Opportunity.MatchingGift</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Opportunity-npsp__Donation Layout</layout>
@@ -70,17 +70,17 @@
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Opportunity.In_Kind_Gift</recordType>
+        <recordType>Opportunity.InKindGift</recordType>
         <visible>true</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Opportunity.Major_Gift</recordType>
+        <recordType>Opportunity.MajorGift</recordType>
         <visible>true</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Opportunity.Matching_Gift</recordType>
+        <recordType>Opportunity.MatchingGift</recordType>
         <visible>true</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>

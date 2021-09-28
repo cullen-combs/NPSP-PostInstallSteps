@@ -205,9 +205,9 @@ flows:
                   default: true
                 - record_type: Opportunity.NPSP_Default
                 - record_type: Opportunity.Membership
-                - record_type: Opportunity.Matching_Gift
-                - record_type: Opportunity.Major_Gift
-                - record_type: Opportunity.In_Kind_Gift
+                - record_type: Opportunity.MatchingGift
+                - record_type: Opportunity.MajorGift
+                - record_type: Opportunity.InKindGift
                 - record_type: Opportunity.Grant
                 - record_type: Opportunity.Donation
                   default: true
