@@ -464,3 +464,4 @@ tasks:
         options:
             mapping: datasets/sampledatadev.yml
             sql_path: datasets/sampledatadev.sql
+            drop_missing_schema: True
