@@ -189,7 +189,9 @@ flows:
             task: npsp_load_csettings
           12:
             flow: npsp:enable_rd2_managed
-
+          13:
+            task: npsp_org_address_enabled
+            
     npsp_profile:
         steps:
           1:
