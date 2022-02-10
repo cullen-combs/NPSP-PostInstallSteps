@@ -1,12 +1,16 @@
 {
     "product": {
         "title": {
-            "message": "NPSP Post Installation Configuration",
+            "message": "NPSP Post Installation Steps",
             "description": "name of product"
         },
         "short_description": {
-            "message": "NPSP Post Installation Solution Template",
+            "message": "Automation to perform the NPSP Post Installation steps",
             "description": "tagline of product"
+        },
+        "description": {
+            "message": "This installation plan will automatically perform the NPSP Post Installation steps",
+            "description": "shown on product detail page (markdown)"
         }
     },
     "plan:install": {
@@ -132,6 +136,30 @@
         },
         "batch_apex_wait": {
             "message": "batch_apex_wait",
+            "description": "title of installation step"
+        },
+        "Enable customizable rollups after enabling RD2": {
+            "message": "Enable customizable rollups after enabling RD2",
+            "description": "title of installation step"
+        },
+        "Wait for CRLP to be fully enabled before continuing with data migration": {
+            "message": "Wait for CRLP to be fully enabled before continuing with data migration",
+            "description": "title of installation step"
+        },
+        "Enables RD2 in Custom Settings.": {
+            "message": "Enables RD2 in Custom Settings.",
+            "description": "title of installation step"
+        },
+        "Deploys the unpackaged configuration required for RD2": {
+            "message": "Deploys the unpackaged configuration required for RD2",
+            "description": "title of installation step"
+        },
+        "Update enhanced Recurring Donation enablement page state": {
+            "message": "Update enhanced Recurring Donation enablement page state",
+            "description": "title of installation step"
+        },
+        "Wait until after the data migration job has completed": {
+            "message": "Wait until after the data migration job has completed",
             "description": "title of installation step"
         }
     }
