@@ -119,6 +119,84 @@ plans:
               namespace: npsp
               restore: True
 
+  uapex:
+    slug: uapex
+    title: Unschedule Apex
+    tier: additional
+    description: Unschedule Scheduled Apex Jobs 
+    is_listed: True
+    checks:
+      - when: "not tasks.check_my_domain_active()"
+        action: error
+        message: "Please enable My Domain in your org prior to installing."    
+      - when: "'npsp' not in tasks.get_installed_packages()"
+        action: error
+        message: "NPSP Post Installation requires the Nonprofit Success Pack. Please install the Nonprofit Success Pack and try again."
+    steps:
+        1:
+            task: unschedule_apex
+            ui_options:
+                name: Unschedule Scheduled Apex Jobs
+                is_required: False
+                is_recommended: True
+
+  ostages:
+    slug: ostages
+    title: Configure Opportunity Stages
+    tier: additional
+    description: Configure Opportunity Stages
+    is_listed: True
+    checks:
+      - when: "not tasks.check_my_domain_active()"
+        action: error
+        message: "Please enable My Domain in your org prior to installing."    
+      - when: "'npsp' not in tasks.get_installed_packages()"
+        action: error
+        message: "NPSP Post Installation requires the Nonprofit Success Pack. Please install the Nonprofit Success Pack and try again."
+    steps:
+        1:
+            task: npsp_opp_stages
+            ui_options:
+                name: Configure Opportunity Stages
+
+  orectype:
+    slug: orectype
+    title: Configure Opportunity Sales Processes and Record Types
+    tier: additional
+    description: Configure Opportunity Sales Processes and Record Types
+    is_listed: True
+    checks:
+      - when: "not tasks.check_my_domain_active()"
+        action: error
+        message: "Please enable My Domain in your org prior to installing."    
+      - when: "'npsp' not in tasks.get_installed_packages()"
+        action: error
+        message: "NPSP Post Installation requires the Nonprofit Success Pack. Please install the Nonprofit Success Pack and try again."
+    steps:
+        1:
+            task: npsp_opp_proc_rec
+            ui_options:
+                name: Configure Opportunity Sales Processes and Record Types
+
+  ocroles:
+    slug: ocroles
+    title: Add Opportunity Contact Roles and Contact Mx. Salutation
+    tier: additional
+    description: Add Opportunity Contact Roles and Contact Mx. Salutation
+    is_listed: True
+    checks:
+      - when: "not tasks.check_my_domain_active()"
+        action: error
+        message: "Please enable My Domain in your org prior to installing."    
+      - when: "'npsp' not in tasks.get_installed_packages()"
+        action: error
+        message: "NPSP Post Installation requires the Nonprofit Success Pack. Please install the Nonprofit Success Pack and try again."
+    steps:
+        1:
+            task: npsp_opproles_mx
+            ui_options:
+                name: Add Opportunity Contact Roles and Contact Mx. Salutation
+
 flows:
     complete_install:
         description: NPSP Post Installation Configuration and Sample Data
