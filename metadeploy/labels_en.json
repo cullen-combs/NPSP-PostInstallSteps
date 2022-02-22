@@ -162,5 +162,29 @@
             "message": "Wait until after the data migration job has completed",
             "description": "title of installation step"
         }
+    },
+    "plan:uapex": {
+        "title": {
+            "message": "Unschedule Apex",
+            "description": "title of installation plan"
+        }
+    },
+    "plan:ostages": {
+        "title": {
+            "message": "Configure Opportunity Stages",
+            "description": "title of installation plan"
+        }
+    },
+    "plan:orectype": {
+        "title": {
+            "message": "Configure Opportunity Sales Processes and Record Types",
+            "description": "title of installation plan"
+        }
+    },
+    "plan:ocroles": {
+        "title": {
+            "message": "Add Opportunity Contact Roles and Contact Mx. Salutation",
+            "description": "title of installation plan"
+        }
     }
 }
