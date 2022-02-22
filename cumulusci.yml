@@ -132,6 +132,9 @@ plans:
       - when: "'npsp' not in tasks.get_installed_packages()"
         action: error
         message: "NPSP Post Installation requires the Nonprofit Success Pack. Please install the Nonprofit Success Pack and try again."
+      - when: "not tasks.check_communities_enabled()"
+        action: error
+        message: "Please ensure that Communities is enabled in your org before beginning the installation."
     steps:
         1:
             task: unschedule_apex
@@ -153,9 +156,6 @@ plans:
       - when: "'npsp' not in tasks.get_installed_packages()"
         action: error
         message: "NPSP Post Installation requires the Nonprofit Success Pack. Please install the Nonprofit Success Pack and try again."
-      - when: "not tasks.check_enable_networks_enabled()"
-        action: error
-        message: "Communities must be enabled in your org before installation."
     steps:
         1:
             task: npsp_opp_stages
@@ -548,3 +548,12 @@ tasks:
             mapping: datasets/sampledatadev.yml
             sql_path: datasets/sampledatadev.sql
             drop_missing_schema: True
+
+    check_communities_enabled:
+        description: Ensure that Communities is enabled.
+        class_path: cumulusci.tasks.preflight.settings.CheckSettingsValue
+        group: Preflight Checks
+        options:
+            settings_type: CommunitiesSettings
+            settings_field: enableCommunityWorkspaces
+            value: True

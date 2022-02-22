@@ -27,6 +27,10 @@
         "NPSP Post Installation requires the Nonprofit Success Pack. Please install the Nonprofit Success Pack and try again.": {
             "message": "NPSP Post Installation requires the Nonprofit Success Pack. Please install the Nonprofit Success Pack and try again.",
             "description": "shown if validation fails"
+        },
+        "Communities must be enabled in your org before installation.": {
+            "message": "Communities must be enabled in your org before installation.",
+            "description": "shown if validation fails"
         }
     },
     "steps": {
