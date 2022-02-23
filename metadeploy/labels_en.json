@@ -169,6 +169,14 @@
         "Wait until after the data migration job has completed": {
             "message": "Wait until after the data migration job has completed",
             "description": "title of installation step"
+        },
+        "Unscheduled Scheduled Apex Jobs": {
+            "message": "Unscheduled Scheduled Apex Jobs",
+            "description": "description of installation step"
+        },
+        "This step will configure the required Opportunity Stages for the NPSP package": {
+            "message": "This step will configure the required Opportunity Stages for the NPSP package",
+            "description": "description of installation step"
         }
     },
     "plan:uapex": {
