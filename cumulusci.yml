@@ -140,6 +140,7 @@ plans:
             task: unschedule_apex
             ui_options:
                 name: Unschedule Scheduled Apex Jobs
+                description: Unscheduled Scheduled Apex Jobs
                 is_required: False
                 is_recommended: True
 
@@ -161,6 +162,7 @@ plans:
             task: npsp_opp_stages
             ui_options:
                 name: Configure Opportunity Stages
+                description: This step will configure the required Opportunity Stages for the NPSP package
 
   orectype:
     slug: orectype

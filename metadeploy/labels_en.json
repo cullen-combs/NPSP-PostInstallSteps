@@ -31,6 +31,10 @@
         "Communities must be enabled in your org before installation.": {
             "message": "Communities must be enabled in your org before installation.",
             "description": "shown if validation fails"
+        },
+        "Please ensure that Communities is enabled in your org before beginning the installation.": {
+            "message": "Please ensure that Communities is enabled in your org before beginning the installation.",
+            "description": "shown if validation fails"
         }
     },
     "steps": {
