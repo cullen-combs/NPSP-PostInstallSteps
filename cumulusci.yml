@@ -1,9 +1,9 @@
-minimum_cumulusci_version: '3.38.0'
+minimum_cumulusci_version: '3.54.0'
 project:
     name: NPSP-PostInstallSteps
     package:
         name: NPSP-PostInstallSteps
-        api_version: '50.0'
+        api_version: '53.0'
     git:
         default_branch: 'main'
         repo_url: https://github.com/SFDO-Alliances/NPSP-PostInstallSteps
